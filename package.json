@@ -1,10 +1,11 @@
 {
-  "name": "zoomkoding.com",
+  "name": "bangjhlogs",
   "private": false,
-  "description": "A neat blog theme for developers",
+  "description": "재호의 개발일기",
   "version": "3.0.0",
-  "author": "zoomkoding <zoomkoding@gmail.com>",
+  "author": "bangjh <awesomelon@naver.com>",
   "dependencies": {
+    "@emotion/react": "^11.10.4",
     "@mui/icons-material": "^5.1.0",
     "@mui/material": "^5.1.0",
     "gatsby": "^4.9.3",
@@ -31,6 +32,7 @@
     "prismjs": "^1.24.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "react-rotating-text": "^1.4.1",
     "sass": "^1.43.4",
     "typeface-montserrat": "^1.1.13"
