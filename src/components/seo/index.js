@@ -57,7 +57,7 @@ function Seo({ description, title }) {
           content: `website`,
         },
         {
-          property: `google-site-verification`,
+          name: `google-site-verification`,
           content: `DkAKLHvYsuago83B2I5OyLFInPCW-J7cOVjvEqPtAH0`,
         },
       ]}
