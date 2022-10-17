@@ -114,6 +114,14 @@ module.exports = {
               escapeEntities: {},
             },
           },
+          {
+            resolve: `gatsby-plugin-gtag`,
+            options: {
+              trackingId: 'G-18MQWCHBDK',
+              head: false,
+              anonymize: true,
+            },
+          },
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
