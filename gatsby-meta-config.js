@@ -1,8 +1,8 @@
 module.exports = {
-  title: `vLatte.com`,
+  title: `bangjh-blog`,
   description: `재호의 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://www.vLatte.com`,
+  siteUrl: `https://www.bangjh-blog.com`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
