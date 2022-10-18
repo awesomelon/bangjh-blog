@@ -9,13 +9,13 @@ module.exports = {
       repo: ``, // `zoomkoding/zoomkoding-gatsby-blog`,
     },
   },
-  ga: '0', // Google Analytics Tracking ID
+  ga: 'DkAKLHvYsuago83B2I5OyLFInPCW', // Google Analytics Tracking ID
   author: {
     name: `방재호`,
     bio: {
       role: `개발자`,
       description: ['비지니스 성장에 기여하는', '고객의 편의성을 중요시 하는', '동료들과 협업하는'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      thumbnail: 'profile.png', // Path to the image in the 'asset' folder
     },
     social: {
       github: ``, // `https://github.com/zoomKoding`,
