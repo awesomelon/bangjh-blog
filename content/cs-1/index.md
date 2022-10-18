@@ -1,5 +1,5 @@
 ---
-emoji: 🧢
+emoji: ☀️
 title: 쉽고 빠르게 나만의 개츠비(Gatsby) 블로그 만들기
 date: '2021-03-22 23:00:00'
 author: 줌코딩
@@ -163,7 +163,7 @@ index.md 파일의 상단에는 아래와 같이 emoji, title, date, author, tag
 
 ```
 ---
-emoji: 🧢
+emoji:
 title: Getting Started
 date: '2021-03-22 23:00:00'
 author: 줌코딩
