@@ -6,7 +6,7 @@ module.exports = {
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      repo: ``, // `zoomkoding/zoomkoding-gatsby-blog`,
+      repo: `awesomelon/bangjh-blog`, // `zoomkoding/zoomkoding-gatsby-blog`,
     },
   },
   ga: 'DkAKLHvYsuago83B2I5OyLFInPCW', // Google Analytics Tracking ID
@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `개발자`,
       description: ['비지니스 성장에 기여하는', '고객의 편의성을 중요시 하는', '동료들과 협업하는'],
-      thumbnail: 'profile.png', // Path to the image in the 'asset' folder
+      thumbnail: 'profile.gif', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/awesomelon`, // `https://github.com/zoomKoding`,
