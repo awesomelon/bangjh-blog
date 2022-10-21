@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: CI/CD란?
-date: '2022-10-21 19:00:00'
+date: '2022-10-19 19:00:00'
 author: Bangjh
 tags: CI CD ci cd
 categories: CS

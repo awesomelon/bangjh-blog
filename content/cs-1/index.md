@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: 캐시가 뭐에요? 먹는건가요?
-date: '2022-10-18 23:00:00'
+date: '2022-10-17 23:00:00'
 author: Bangjh
 tags: cs 캐시 cache
 categories: CS
