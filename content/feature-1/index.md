@@ -28,9 +28,9 @@ categories: FEATURE
 
 ## Exception Filters
 
-기본 예외 필터가 자동으로 많은 경우의 예외 처리를 해주지만 **Custom**으로 완전 제어를 하고 싶은 경우가 있습니다.
+기본 예외 필터가 자동으로 많은 경우의 예외 처리를 해주지만 **custom**으로 제어를 하고 싶은 경우가 있습니다.
 
-예를 들어 로깅을 추가하거나 다른 형태의 JSON 스키마로 반환할 수도 있습니다.
+예를 들어 다른 형태의 JSON 스키마로 반환하고 싶은 경우입니다.
 
 ```ts
 import { ExceptionFilter, Catch, ArgumentsHost, HttpException } from '@nestjs/common';
@@ -81,7 +81,7 @@ export class UserController {
 
 **Exception Filter**를 적용하고 싶다면 **@UseFilters()** 를 import해야 합니다. (이름이 아주 직관적이죠?🤣)
 
-user 컨트롤러의 라우팅 핸들러 전체에 **Exception Filter**를 적용하고 싶다면 **@Controller()** 에 위와 같이 적용하시면 됩니다.
+User 컨트롤러의 라우팅 핸들러 전체에 **Exception Filter**를 적용하고 싶다면 **@Controller()** 에 위와 같이 적용하시면 됩니다.
 
 그리고 특정 라우팅 핸들러에만 적용하고 싶다면
 
