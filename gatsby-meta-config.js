@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Bangjh-blog`,
+  title: `Bangjh-Blog`,
   description: `재호의 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://www.bangjh-blog.com`,
@@ -13,8 +13,8 @@ module.exports = {
   author: {
     name: `방재호`,
     bio: {
-      role: `개발자`,
-      description: ['비지니스 성장에 기여하는', '고객의 편의성을 중요시 하는', '동료들과 협업하는'],
+      role: `웹 개발자`,
+      description: ['비지니스 성장에 기여하는', '클린 코드를 지향하는', '동료들과 협업하는'],
       thumbnail: 'profile.gif', // Path to the image in the 'asset' folder
     },
     social: {
