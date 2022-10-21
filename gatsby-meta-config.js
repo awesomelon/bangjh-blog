@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Bangjh-Blog`,
+  title: `방로그`,
   description: `재호의 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://www.bangjh-blog.com`,
