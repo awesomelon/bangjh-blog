@@ -26,7 +26,7 @@ function CategoryTemplate({ pageContext }) {
 
   return (
     <Layout>
-      <Seo title="Posts" />
+      <Seo title="방로그" />
       <CategoryPageHeader title={categories[currentTabIndex]} subtitle={`${posts.length} posts`} />
       <PostTabs
         tabIndex={currentTabIndex}
