@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { IconButton, Tooltip } from '@mui/material';
+import { IconButton } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
 import PlayIcon from '@mui/icons-material/PlayArrowOutlined';
@@ -17,6 +17,7 @@ function IconButtonBar({ links = {} }) {
       case 'post':
         return <DescriptionIcon {...props} />;
       case 'demo':
+      case 'siteUrl':
         return <PlayIcon {...props} />;
       case 'github':
         return <GitHubIcon {...props} />;
@@ -38,11 +39,13 @@ function IconButtonBar({ links = {} }) {
       {Object.keys(links).map((link, index) => {
         return (
           links[link] && (
-            <Tooltip key={index} title={link} arrow className="icon-tooltip">
-              <IconButton size="small" href={`${link === 'email' ? `mailto:` : ``}${links[link]}`}>
-                {IconPicker(link)}
-              </IconButton>
-            </Tooltip>
+            <IconButton
+              size="small"
+              target="_blank"
+              href={`${link === 'email' ? `mailto:` : ``}${links[link]}`}
+            >
+              {IconPicker(link)}
+            </IconButton>
           )
         );
       })}

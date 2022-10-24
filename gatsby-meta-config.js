@@ -43,12 +43,10 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2022.10 ~',
-        activity: '개인 블로그 개발 및 운영',
+        date: '2020.01 ~',
+        activity: '아이엠폼 재직 중',
         links: {
-          post: '/cs-1',
-          github: 'https://github.com/awesomelon/bangjh-blog',
-          demo: 'https://www.bangjh-blog.com',
+          siteUrl: 'https://imform.co.kr/main/index.html',
         },
       },
     ],

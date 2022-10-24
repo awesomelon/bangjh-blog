@@ -53,6 +53,7 @@ export const pageQuery = graphql`
               demo
               googlePlay
               appStore
+              siteUrl
             }
           }
 
