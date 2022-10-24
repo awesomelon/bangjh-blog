@@ -44,7 +44,7 @@ module.exports = {
       // ========================================================
       {
         date: '2020.01 ~',
-        activity: '아이엠폼 재직 중',
+        activity: '아이엠폼 미니파이 개발팀 재직 중',
         links: {
           siteUrl: 'https://imform.co.kr/main/index.html',
         },
