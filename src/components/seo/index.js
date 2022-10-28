@@ -14,6 +14,7 @@ function Seo({ description, title }) {
               name
             }
             ogImage
+            gSearch
           }
         }
       }
@@ -21,6 +22,7 @@ function Seo({ description, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+
   return (
     <Helmet
       htmlAttributes={{ lang: 'en' }}
@@ -51,10 +53,13 @@ function Seo({ description, title }) {
           property: 'og:image',
           content: site.siteMetadata.ogImage,
         },
-
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: 'google-site-verification',
+          content: site.siteMetadata.gSearch,
         },
       ]}
     />
