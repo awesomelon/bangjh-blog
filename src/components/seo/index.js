@@ -58,7 +58,7 @@ function Seo({ description, title }) {
           content: `website`,
         },
         {
-          property: 'google-site-verification',
+          name: 'google-site-verification',
           content: site.siteMetadata.gSearch,
         },
       ]}
