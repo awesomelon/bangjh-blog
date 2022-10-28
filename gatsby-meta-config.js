@@ -9,7 +9,7 @@ module.exports = {
       repo: `awesomelon/bangjh-blog`, // `zoomkoding/zoomkoding-gatsby-blog`,
     },
   },
-  ga: 'DkAKLHvYsuago83B2I5OyLFInPCW', // Google Analytics Tracking ID
+  ga: 'MQiZnG2WQMtBsW23CScDByCHaZ5Bnvd2w_1rEs6SYMs', // Google Analytics Tracking ID
   author: {
     name: `방재호`,
     bio: {
