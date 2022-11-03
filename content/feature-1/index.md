@@ -4,7 +4,7 @@ title: NestJS 예외 처리 (Error Exception)
 date: '2022-10-21 17:00:00'
 author: Bangjh
 tags: nestjs Error Handling Error Exception
-categories: NestJS
+categories: NodeJs
 ---
 
 ![image1](image1.png)
