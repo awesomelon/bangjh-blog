@@ -37,6 +37,8 @@ categories: LINUX
 
 ![image3](image3.gif)
 
+<br >
+
 ---
 
 ## Network
@@ -58,6 +60,8 @@ one.one.one.one.domain:
 12790 1/0/0 A 172.217.15.78 (44)
 ```
 
+<br >
+
 ### dig
 
 > DNS 조회용 유틸리티입니다.
@@ -68,6 +72,8 @@ one.one.one.one.domain:
 
 ![image4](image4.png)
 
+<br >
+
 ### telnet / nc
 
 > 포트가 열려 있는지 확인합니다.
@@ -77,6 +83,8 @@ one.one.one.one.domain:
 <br >
 
 ![image6](image6.png)
+
+<br >
 
 ---
 
@@ -94,6 +102,8 @@ PID를 통해 실행 중인 특정 애플리케이션을 확인할 수도 있습
 strace -p 3569
 ```
 
+<br >
+
 ### Check processes open files
 
 현재 실행 중인 특정 프로세스를 확인하는 명령어는 `ps aux | grep APP_NAME` 입니다.
@@ -101,11 +111,15 @@ strace -p 3569
 
 그런 다음 `ls -l /proc/PID/fd` 를 통해 해당 프로세스의 파일 리스트를 확인할 수 있습니다.
 
+<br >
+
 ### Visualize an API request
 
 `curl`은 url 요청 시 발생되는 문제를 찾을 수 있게 도움을 줍니다. `-v`옵션을 추가하면 더 자세한 내용을 볼 수 있습니다.
 
 ![image8](image8.png)
+
+<br >
 
 ---
 
