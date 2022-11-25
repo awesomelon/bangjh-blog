@@ -40,6 +40,7 @@ function IconButtonBar({ links = {} }) {
         return (
           links[link] && (
             <IconButton
+              key={index}
               size="small"
               target="_blank"
               href={`${link === 'email' ? `mailto:` : ``}${links[link]}`}
