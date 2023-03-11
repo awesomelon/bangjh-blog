@@ -15,6 +15,16 @@ categories: MQ
 
 kafka는 `Pub-Sub` 모델의 `메시지 큐`입니다. 분산 환경에 특화되어 있는 특징을 가지고 있습니다. <br >
 
+### 1-1. 아키텍쳐
+
+![image7](image7.png)
+
+카프카 클러스터를 중심으로 Producer와 Consumer가 데이터를 Push하고 Pull하는 구조입니다. <br >
+Producer, Consumer는 각기 다른 프로세스에서 비동기로 동작하고 있습니다. 아키텍처를 좀 더 자세히 표현하면 아래와 같습니다.
+<br >
+
+![image8](image8.png)
+
 <br >
 
 ## 2. 구성요소
@@ -33,27 +43,46 @@ kafka는 `Pub-Sub` 모델의 `메시지 큐`입니다. 분산 환경에 특화�
 
 <br >
 
-### 2-3. Consumer
+### 2-3. Kafka Cluster
 
-`Consumer`는 이러한 Topic을 구독하고 이로부터 얻어낸 메시지를 처리하는 클라이언트 애플리케이션입니다.
+Kafka Server로 이루어진 클러스터를 말합니다. Kafka Cluster를 이루는 각 요소는 다음과 같습니다.
 
-<br >
+#### Broker
 
-### 2-4. Topic
+> 카프카 서버를 말합니다.
+
+#### Zookeeper
+
+**주키퍼(Zookeeper)는 분산 코디네이션 시스템입니다.** <br >
+
+> Kafka Broker를 하나의 클러스터로 코디네이팅하는 역할을 하며 Kafka Cluster의 리더를 발탁하는 방식도 주키퍼가 제공하는 기능을 이용합니다.
+
+#### Topic
 
 메시지가 쓰이는 곳입니다. Producer는 이 `Topic`에 메시지를 게시합니다. 그리고 Consumer는 Topic으로부터 메시지를 가져와 처리합니다. <br >
-**Topic은 파일시스템의 폴더와 유사하며, 메시지는 폴더 안의 파일과 유사합니다.**
+Topic은 파일시스템의 폴더와 유사하며, 메시지는 폴더 안의 파일과 유사합니다. <br >
+**하나의 Topic은 1개 이상의 Partition으로 구성되어 있습니다.**
 
 > Topic에 저장된 메시지는 필요한 만큼 다시 읽을 수 있습니다.
 
-<br >
-
-### 2-5. Partition
+#### Partition
 
 Topic은 여러 Broker에 분산되어 저장되며, 이렇게 분산된 Topic을 `Partition`이라고 합니다. <br >
 어떤 이벤트가 Partition에 저장될지는 메시지의 key(키)에 의해 정해지며, 같은 키를 가지는 메시지는 항상 같은 Partition에 저장됩니다.
 
 > kafka는 Topic의 Partition에 지정된 Consumer가 항상 정확히 동일한 순서로 Partition의 이벤트를 읽을 것을 보장합니다.
+
+#### Leader, Follower
+
+Kafka에서는 각 Partition당 복제된 Partition 중에서 하나의 리더가 선출됩니다. <br >
+
+> 이 리더는 모든 읽기, 쓰기 연산을 담당하게 됩니다. 리더를 제외한 나머지는 팔로워가 되고 이 팔로워들은 단순히 리더의 데이터를 복사하는 역할만 하게 됩니다.
+
+<br >
+
+### 2-4. Consumer
+
+`Consumer`는 이러한 Topic을 구독하고 이로부터 얻어낸 메시지를 처리하는 클라이언트 애플리케이션입니다.
 
 <br >
 
@@ -74,7 +103,7 @@ Consumer는 Broker의 특정 Topic에서 메시지를 가져와 처리를 하기
 
 ### 3-2. Push와 Pull 모델
 
-kafka의 **`Consumer는 Pull 모델을 기반`**으로 메시지 처리를 진행합니다. <br >
+kafka의 **`Consumer는 Pull 모델을 기반`** 으로 메시지 처리를 진행합니다. <br >
 즉, Broker가 Consumer에게 메시지를 전달하는 것이 아닌, Consumer가 필요할 때, Broker로부터 메시지를 가져와 처리하는 형태입니다.
 
 <br >
