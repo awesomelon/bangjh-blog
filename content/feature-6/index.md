@@ -140,7 +140,51 @@ Consumer의 `Poll()`은 이전에 `commit한 offset`이 존재하면, 해당 off
 
 #### Rebalance
 
-####
+Partition을 담당하던 Consumer가 처리 불가 상태가 되어버리면, Partition과 Consumer를 재조정하여 남은 Consumer Group 내의 Consumer들이 Partition을 적절하게 나누어 처리하게 됩니다.
+
+또한 Consumer Group 내에서 Consumer들 간에 **Offset 정보를 공유**하고 있기 때문에 특정 Consumer가 처리 불가 상태가 되었을 때, 해당 Consumer가 처리한 마지막 Offset 이후부터 처리를 이어서 할 수 있습니다.
+
+이렇게 **Partition을 나머지 Consumer들이 다시 나누어 처리하도록 하는 것을 Rebalance**라고 하며 이를 위해 Consumer Group이 필요합니다.
+
+<br >
+
+#### Consumer Group과 Partition
+
+![image3](image3.png)
+
+무조건 Consumer Group 내의 Consumer들은 모두 각기 다른 Partition에 연결되어야 합니다. 이렇게 함으로써, **Consumer의 메시지 처리 순서를 보장**하게 됩니다.
+
+<br >
+
+즉, 아래와 같은 형태로 구성은 불가능합니다.
+
+![image4](image4.png)
+
+<br >
+
+#### Consumer 확장
+
+앞서 말씀드린 Consumer Group과 Partition의 관계에 대해 알고 계셔야 Consumer의 성능 향상을 위한 확장을 제대로 하실 수가 있습니다.
+
+![image5](image5.png)
+
+Consumer의 성능이 부족해 Consumer를 확장한다고 가정했을 때, 앞서 설명드린 것과 같이 Consumer Group 내의 Consumer는 무조건 각기 다른 Partition에만 연결할 수 있습니다. <br >때문에 **Partition보다 Consumer의 수가 많으면 당연히 새 Consumer는 놀게 됩니다.**
+
+![image6](image6.png)
+
+**따라서 Consumer를 확장할 때에는 Partition도 같이 늘려주어야 합니다.**
+
+<br >
+
+### 3-5. 메시지(이벤트) 전달 컨셉
+
+kafka는 메시지를 전달할 때 보장하는 여러 가지 방식이 있습니다.
+
+- **At most once(최대 한번)** <br > **실패나 타임아웃 등이 발생하면 메시지를 버릴 수 있습니다.** <br > 데이터가 일부 누락되더라도 영향이 없는 경우엔 대량처리 및 짧은 주기의 전송 서비스에 유용할 수 있습니다.
+
+- **At least once(최소 한번)** <br > **메시지가 최소 1번 이상 전달되는 것을 보장합니다.** <br > 실패나 타임아웃 등이 발생하면 메시지를 다시 전송하며, 이 경우엔 동일한 메시지가 중복으로 처리될 수 있습니다.
+
+- **Exactly once(정확히 한번)** <br > **메시지가 정확하게 한 번만 전달되는 것을 보장합니다.** <br > 손실이나 중복 없이, 순서대로 메시지를 전송하는 것은 구현 난이도가 높고 비용이 많이 듭니다.
 
 ---
 
