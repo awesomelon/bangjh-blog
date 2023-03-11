@@ -3,8 +3,8 @@ emoji: ☀️
 title: kafka가 뭐야?
 date: '2023-03-03 16:24:00'
 author: Bangjh
-tags: kafka message pub/sub
-categories: KAFKA
+tags: kafka message pub/sub queue
+categories: MQ
 ---
 
 ![image1](image1.jpg)
