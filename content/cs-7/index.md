@@ -136,9 +136,9 @@ DBMS에 트랜잭션이 발생하게 되면 DBMS는 **이를 모두 Sequential�
 
 참조
 
-[https://careerly.co.kr/@kimcoder](https://careerly.co.kr/@kimcoder)
-[https://velog.io/@soongjamm/Eventual-Consistency-란](https://velog.io/@soongjamm/Eventual-Consistency-란)
-[https://bourbonkk.tistory.com/86](https://bourbonkk.tistory.com/86)
+- [https://careerly.co.kr/@kimcoder](https://careerly.co.kr/@kimcoder)
+- [https://velog.io/@soongjamm/Eventual-Consistency-란](https://velog.io/@soongjamm/Eventual-Consistency-란)
+- [https://bourbonkk.tistory.com/86](https://bourbonkk.tistory.com/86)
 
 ```toc
 
