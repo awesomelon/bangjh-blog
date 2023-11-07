@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: NestJS 로깅 도입하기 (winston)
-date: '2022-10-24 15:00:00'
+date: '2023-04-24 15:00:00'
 author: Bangjh
 tags: nestjs logging winston
 categories: NodeJs

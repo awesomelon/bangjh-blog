@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: Redis-Stat 레디스 모니터링
-date: '2023-02-27 21:24:00'
+date: '2023-03-27 21:24:00'
 author: Bangjh
 tags: redis monitoring
 categories: DB

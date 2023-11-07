@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: MongoDB(BulkWrite)
-date: '2022-10-26 19:00:00'
+date: '2023-05-26 19:00:00'
 author: Bangjh
 tags: mongodb bulkWrite
 categories: DB

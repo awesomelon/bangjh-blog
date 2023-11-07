@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: kafka를 설치 및 연동해보자 (with NestJs)
-date: '2023-03-23 17:24:00'
+date: '2023-07-23 17:24:00'
 author: Bangjh
 tags: kafka message pub/sub queue install nestjs
 categories: MQ

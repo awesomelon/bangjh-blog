@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: 구글 검색 너란 녀석...
-date: '2022-10-21 16:00:00'
+date: '2022-12-21 16:00:00'
 author: Bangjh
 tags: google googlesearch seo crawler
 categories: CS
