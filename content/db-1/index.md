@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: 배치 작업 어디까지 해봤니?
-date: '2022-12-01 11:00:00'
+date: '2023-02-01 11:00:00'
 author: Bangjh
 tags: mongodb batch
 categories: DB
