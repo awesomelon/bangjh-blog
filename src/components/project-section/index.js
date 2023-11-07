@@ -6,6 +6,7 @@ import './style.scss';
 
 function ProjectSection({ projects }) {
   if (!projects || projects.length < 2) return null;
+
   return (
     <div className="project-section">
       <SectionHeader title="Projects" />
