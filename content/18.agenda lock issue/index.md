@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
-title: 대용량 엑셀 다운로드 이슈
-date: '2023-08-05 16:00:00'
+title: Agenda Lock Issue
+date: '2023-09-09 16:00:00'
 author: Bangjh
 tags: 대용량 엑셀 데이터 xlsx.js XLSX
 categories: ISSUE

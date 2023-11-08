@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: LLM (Large Language Model) 및 사용 후가
-date: '2023-04-24 20:15:00'
+date: '2023-04-08 20:15:00'
 author: Bangjh
 tags: LLM Vicuna LLaMA Alpaca ChatGPT
 categories: AI

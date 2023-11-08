@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: NestJS 예외 처리 (Error Exception)
-date: '2023-04-21 17:00:00'
+date: '2023-01-07 17:00:00'
 author: Bangjh
 tags: nestjs Error Handling Error Exception
 categories: NodeJs

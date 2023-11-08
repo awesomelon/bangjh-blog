@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: 서버 문제를 디버깅하기 위한 리눅스 명령어
-date: '2023-08-03 22:00:00'
+date: '2023-06-10 22:00:00'
 author: Bangjh
 tags: linux commands debugging
 categories: LINUX

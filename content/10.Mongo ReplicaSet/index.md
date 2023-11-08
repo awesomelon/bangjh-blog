@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: MongoDB(ReplicaSet)
-date: '2023-05-27 11:00:00'
+date: '2023-03-18 11:00:00'
 author: Bangjh
 tags: mongodb ReplicaSet
 categories: DB

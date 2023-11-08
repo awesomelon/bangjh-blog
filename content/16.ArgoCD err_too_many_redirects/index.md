@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: ArgoCD err_too_many_redirects
-date: '2023-09-03 22:00:00'
+date: '2023-07-08 22:00:00'
 author: Bangjh
 tags: ArgoCD err_too_many_redirects debugging
 categories: ISSUE

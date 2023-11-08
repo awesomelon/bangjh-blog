@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: DALL-E
-date: '2023-04-25 20:15:00'
+date: '2023-04-15 20:15:00'
 author: Bangjh
 tags: DALL-E
 categories: AI
