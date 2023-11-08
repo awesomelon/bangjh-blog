@@ -74,7 +74,7 @@ module.exports = {
         description:
           '클라우드 비용 절감을 위한 개발 환경의 클라우드(Tencent Cloud, AWS)를 사내망으로 마이그레이션하는 작업을 담당',
         techStack: ['Docker Swarm', 'Portainer', 'Drone CI', 'Nexus'],
-        thumbnailUrl: 'ops.webp',
+        thumbnailUrl: '',
         links: {
           post: '',
           github: '',
@@ -103,7 +103,7 @@ module.exports = {
           'swr',
           'Typescript',
         ],
-        thumbnailUrl: 'pixvas.png',
+        thumbnailUrl: '',
         links: {
           post: '',
           github: '',
@@ -130,7 +130,7 @@ module.exports = {
           'swr',
           'Typescript',
         ],
-        thumbnailUrl: 'tagnity.png',
+        thumbnailUrl: '',
         links: {
           post: '',
           github: '',
