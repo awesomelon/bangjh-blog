@@ -16,7 +16,7 @@ module.exports = {
     bio: {
       role: `Software Engineer`,
       description: ['비지니스 성장에 기여하는', '클린 코드를 지향하는', '동료들과 협업하는'],
-      thumbnail: 'profile.gif', // Path to the image in the 'asset' folder
+      thumbnail: 'profile.png', // Path to the image in the 'asset' folder
     },
     social: {
       github: ``, // `https://github.com/zoomKoding`,
@@ -66,6 +66,7 @@ module.exports = {
           googlePlay: '',
           appStore: '',
           demo: '',
+          siteUrl: '',
         },
       },
       // ========================================================
@@ -81,6 +82,7 @@ module.exports = {
           googlePlay: '',
           appStore: '',
           demo: '',
+          siteUrl: 'https://charmed-spatula-d56.notion.site/e3fbce69effd4143844f2e23edbd2f51?pvs=4',
         },
       },
       {
@@ -110,6 +112,8 @@ module.exports = {
           googlePlay: '',
           appStore: '',
           demo: '',
+          siteUrl:
+            'https://charmed-spatula-d56.notion.site/PIXVAS-AI-37970c6f71b945229aa4cb2f82f45506?pvs=4',
         },
       },
       {
@@ -137,6 +141,8 @@ module.exports = {
           googlePlay: '',
           appStore: '',
           demo: '',
+          siteUrl:
+            'https://charmed-spatula-d56.notion.site/TAGNITY-c76a38f06ecc488eab1351365c9e1503?pvs=4',
         },
       },
     ],
