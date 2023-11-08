@@ -103,7 +103,7 @@ module.exports = {
           'swr',
           'Typescript',
         ],
-        thumbnailUrl: 'ops.webp',
+        thumbnailUrl: 'pixvas.png',
         links: {
           post: '',
           github: '',
@@ -130,7 +130,7 @@ module.exports = {
           'swr',
           'Typescript',
         ],
-        thumbnailUrl: 'ops.webp',
+        thumbnailUrl: 'tagnity.png',
         links: {
           post: '',
           github: '',
