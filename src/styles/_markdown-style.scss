@@ -1056,9 +1056,10 @@
 // added for image resizing
 .markdown .gatsby-resp-image-wrapper {
   display: flex !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   width: 100% !important;
   max-height: $content-image-max-height !important;
+  margin-left: 0 !important;
 
   img {
     max-width: 100% !important;
