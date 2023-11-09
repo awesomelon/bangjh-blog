@@ -11,8 +11,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './style.scss';
 
 function IconButtonBar({ links = {} }) {
-  console.log(links);
-
   const IconPicker = useCallback((icon) => {
     const props = { className: 'icon' };
     switch (icon) {
