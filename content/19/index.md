@@ -15,7 +15,7 @@ categories: ISSUE
 
 <br >
 
-원인을 파악해보니 `Jenkins Email Extension plug-in` 해당 플러그인에서 취약점이 발견되었다는 것입니다. (이슈 번호 [SECURITY-2939](https://www.jenkins.io/security/advisory/2023-02-15/#SECURITY-2939))
+원인을 파악해보니 `Jenkins Email Extension plug-in` 해당 플러그인에서 취약점이 발견되었다는 것입니다. (이슈 번호 [CVE-2023-25765](https://www.jenkins.io/security/advisory/2023-02-15/#SECURITY-2939))
 
 <br >
 
