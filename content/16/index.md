@@ -7,17 +7,11 @@ tags: ArgoCD err_too_many_redirects debugging
 categories: ISSUE
 ---
 
-> 회사에서 ArgoCD 서버를 세팅하는 과정에서 생긴 이슈와 그것을 해결한 방법을 공유하고자 합니다.
+하루는 ArgoCD 서버를 세팅하던 때였습니다. ArgoCD 서버를 무사히 띄운 후 https를 연결하여 브라우저에서 https로 접속하려고 보니 `err_too_many_redirects` 이슈가 발생하였습니다.
 
 <br >
 
-## 이슈
-
-ArgoCD 서버를 띄운 후 https를 연결하여 브라우저에서 https로 접속하려고 보니 `err_too_many_redirects` 이슈가 발생하였습니다.
-
-<br >
-
-## 원인
+## err_too_many_redirects 넌 뭐야?
 
 원인을 파악하니 아래와 같은 이슈가 있었습니다.
 
@@ -28,7 +22,7 @@ ArgoCD 서버를 띄운 후 https를 연결하여 브라우저에서 https로 �
 
 <br >
 
-## 해결
+## 해결해보자
 
 argocd-server deployment시 `--insecure` 플래그 추가하는 것으로 간단하게 해결
 
