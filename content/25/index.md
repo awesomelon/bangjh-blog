@@ -159,7 +159,7 @@ $ terraform init
 테라폼 버전을 확인하면 현재 테라폼 버전과 사용하고 있는 프로바이더 버전을 확인하실 수 있습니다.
 
 ```bash
-terraform version
+$ terraform version
 ```
 
 ![image2](image2.png)
@@ -221,10 +221,10 @@ data "aws_security_group" "sg" {
 resource "aws_instance" "this" {
     ami = "ami-06d88f849af021b38"
     instance_type = "t2.micro"
-    key_name = "TEST"
+    key_name = var.key_name
 
     tags = {
-        Name = "TEST_EC2"
+        Name = "EC2 NAME"
     }
 
     vpc_security_group_ids = [
@@ -301,7 +301,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 resource "aws_lb_target_group" "target_group_client" {
   name = format("%s-%s", aws_instance.this.id, "example")
   depends_on = [ aws_instance.this ]
-  port = 3000
+  port = var.target_port
   ip_address_type = "ipv4"
   protocol = "HTTP"
   vpc_id = var.vpc_id
@@ -333,7 +333,7 @@ variable "vpc_id" {
 resource "aws_lb_target_group_attachment" "target_group_attach" {
   target_group_arn = aws_lb_target_group.target_group_client.arn
   target_id = aws_instance.this.id
-  port = 3000
+  port = var.target_port
 }
 
 ```
@@ -346,7 +346,7 @@ resource "aws_lb_target_group_attachment" "target_group_attach" {
 
 ```HCL
 data "aws_lb" "this_lb" {
-  name = "this-lb"
+  name = var.lb_name
 }
 ```
 
@@ -376,7 +376,7 @@ resource "aws_lb_listener_rule" "rule" {
   }
   condition {
     host_header {
-      values = ["test.example.com]
+      values = ["${var.sub_domain}.${var.domain_name}"]
     }
   }
 }
@@ -390,13 +390,13 @@ resource "aws_lb_listener_rule" "rule" {
 
 ```HCL
 data "aws_route53_zone" "route53" {
-  name = "example.cc"
+  name = var.domain_name
   private_zone = false
 }
 
 resource "aws_route53_record" "www" {
     zone_id = data.aws_route53_zone.route53.zone_id
-    name = "test.${data.aws_route53_zone.route53.name}"
+    name = "${var.sub_domain}.${var.domain_name}"
     type = "A"
     alias {
         name = data.aws_lb.this_lb.dns_name
