@@ -4,7 +4,7 @@ title: CI/CD란?
 date: '2022-10-22 13:00:00'
 author: Bangjh
 tags: CI CD ci cd
-categories: CS
+categories: BASE
 ---
 
 **CI/CD** 란 용어를 알고 계신가요?

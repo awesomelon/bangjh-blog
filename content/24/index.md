@@ -4,7 +4,7 @@ title: Drone CI와 Portainer를 이용한 CI/CD
 date: '2023-11-24 16:00:00'
 author: Bangjh
 tags: portainer drone ci CI/CD Docker Swarm
-categories: FEATURE
+categories: DEVOPS
 ---
 
 > [Drone CI](https://j-ho.dev/20/) 글과 연결되니 한번 읽어보시는 것을 추천합니다.

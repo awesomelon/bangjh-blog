@@ -4,7 +4,7 @@ title: Jenkins 취약점 이슈 (Script Security sandbox bypass vulnerability in
 date: '2023-10-14 16:00:00'
 author: Bangjh
 tags: jenkins fatal issue SECURITY-2939 CVE-2023-25765
-categories: ISSUE
+categories: DEVOPS
 ---
 
 ## Jenkins 서버에서 취약점이 발견되었다?

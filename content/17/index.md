@@ -4,7 +4,7 @@ title: 대용량 엑셀 다운로드 이슈
 date: '2023-08-05 16:00:00'
 author: Bangjh
 tags: 대용량 엑셀 데이터 xlsx.js XLSX
-categories: ISSUE
+categories: BACKEND
 ---
 
 하루는 개발팀에게 CS가 들어왔습니다. 고객이 엑셀 다운로드하려고 하는데 브라우저가 죽는다는 CS였습니다.
