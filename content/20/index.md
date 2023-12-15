@@ -4,7 +4,7 @@ title: Drone CI for Bitbucket
 date: '2023-10-21 16:00:00'
 author: Bangjh
 tags: Drone CI Docker
-categories: FEATURE
+categories: DEVOPS
 ---
 
 Drone CI는 도커(Docker)를 기반으로 [harness](https://harness.io)에서 개발한 오픈 소스 CI 플랫폼입니다.

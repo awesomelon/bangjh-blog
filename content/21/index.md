@@ -4,7 +4,7 @@ title: Private Nexus Docker Repository
 date: '2023-11-16 16:00:00'
 author: Bangjh
 tags: Nexus Docker Repository
-categories: FEATURE
+categories: DEVOPS
 ---
 
 > 애플리케이션을 Docker를 이용해 배포하다보면 Docker Build 후 생성된 Docker Image를 관리할 수 있는 Repository가 필요합니다. 이번 시간엔 Nexus를 이용한 사내 Docker Private Repository를 구축해보겠습니다.

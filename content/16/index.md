@@ -4,7 +4,7 @@ title: ArgoCD err_too_many_redirects
 date: '2023-07-08 22:00:00'
 author: Bangjh
 tags: ArgoCD err_too_many_redirects debugging
-categories: ISSUE
+categories: DEVOPS
 ---
 
 하루는 ArgoCD 서버를 세팅하던 때였습니다. ArgoCD 서버를 무사히 띄운 후 https를 연결하여 브라우저에서 https로 접속하려고 보니 `err_too_many_redirects` 이슈가 발생하였습니다.

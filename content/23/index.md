@@ -4,7 +4,7 @@ title: 무작위 로그인 시도 (Invalid user {name} from {ip address} port {p
 date: '2023-11-20 16:00:00'
 author: Bangjh
 tags: Linux login invalid user preauth
-categories: ISSUE
+categories: DEVOPS
 ---
 
 로그를 확인하던 중 아래와 같은 심상치않은 로그를 발견했습니다. 😱

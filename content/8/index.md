@@ -4,7 +4,7 @@ title: NestJS 로깅 도입하기 (winston)
 date: '2023-01-14 15:00:00'
 author: Bangjh
 tags: nestjs logging winston
-categories: FEATURE
+categories: BACKEND
 ---
 
 ![image1](image1.png)

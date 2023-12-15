@@ -4,7 +4,7 @@ title: Terraform으로 AWS Infra 구축하기
 date: '2023-11-26 16:00:00'
 author: Bangjh
 tags: Terraform IaC AWS
-categories: FEATURE
+categories: DEVOPS
 ---
 
 요즘 `DevOps`를 논할 때 빠질 수 없는 용어가 있습니다. 바로 **IaC(Infrastructure as Code)** 입니다.

@@ -4,7 +4,7 @@ title: 서버 문제를 디버깅하기 위한 리눅스 명령어
 date: '2023-06-10 22:00:00'
 author: Bangjh
 tags: linux commands debugging
-categories: LINUX
+categories: BASE
 ---
 
 문제의 원인을 조사하는 것은 어려운 작업입니다.

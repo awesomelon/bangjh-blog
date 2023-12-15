@@ -4,7 +4,7 @@ title: 국가 간 API 통신 이슈
 date: '2023-10-07 16:00:00'
 author: Bangjh
 tags: proxy region ccn
-categories: ISSUE
+categories: DEVOPS
 ---
 
 국가 간 API 통신은 일반적으로 느립니다. 예를 들어 한국에서 해외 사이트 접속 시 화면이 늦게 뜨는 등을 예로 들 수 있습니다.

@@ -4,7 +4,7 @@ title: MongoDB(BulkWrite)
 date: '2023-03-11 19:00:00'
 author: Bangjh
 tags: mongodb bulkWrite
-categories: FEATURE
+categories: BACKEND
 ---
 
 ![image1](image1.png)

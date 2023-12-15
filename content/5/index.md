@@ -4,7 +4,7 @@ title: 배치 작업 어디까지 해봤니?
 date: '2022-11-26 11:00:00'
 author: Bangjh
 tags: mongodb batch
-categories: FEATURE
+categories: BACKEND
 ---
 
 ## 배치(Batch) 작업 어디까지 해봤니?
