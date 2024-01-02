@@ -33,9 +33,9 @@ function PageHeader({ siteTitle }) {
               </Link>
             </div>
             <div className="trailing-section">
-              {/* <Link className="link" to="/about">
-                about
-              </Link> */}
+              <Link className="link" to="https://resume-j-ho.netlify.app" >
+                Resume
+              </Link>
               {/* <Link className="link" to="/posts">
                 posts
               </Link> */}
