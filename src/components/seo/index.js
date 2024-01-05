@@ -25,7 +25,7 @@ function Seo({ description, title }) {
 
   return (
     <Helmet
-      htmlAttributes={{ lang: 'en' }}
+      htmlAttributes={{ lang: 'ko' }}
       title={title}
       defaultTitle={site.siteMetadata.title}
       meta={[
@@ -62,7 +62,13 @@ function Seo({ description, title }) {
           content: site.siteMetadata.gSearch,
         },
       ]}
-    />
+    >
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1367328009908538"
+        crossorigin="anonymous"
+      ></script>
+    </Helmet>
   );
 }
 
