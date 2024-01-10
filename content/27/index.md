@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: LoRA 학습법 (colab)
-date: '2024-01-10 20:15:00'
+date: '2023-04-16 20:15:00'
 author: Bangjh
 tags: LLM Stable diffusion LoRA Colab
 categories: AI
