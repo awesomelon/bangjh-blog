@@ -2,7 +2,7 @@
   "name": "bangjh-blog",
   "private": false,
   "description": "재호의 개발일기",
-  "version": "3.0.0",
+  "version": "2.0.0",
   "author": "bangjh <awesomelon@naver.com>",
   "dependencies": {
     "@emotion/react": "^11.10.4",
