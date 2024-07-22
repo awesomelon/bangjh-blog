@@ -36,9 +36,9 @@ function PageHeader({ siteTitle }) {
               <Link className="link" to="https://resume-j-ho.netlify.app" >
                 Resume
               </Link>
-              {/* <Link className="link" to="/posts">
-                posts
-              </Link> */}
+              <Link className="link" to="https://github.com/awesomelon">
+                Github
+              </Link>
               <PostSearch
                 posts={data.allMarkdownRemark.edges.map(({ node }) => new Post(node, true))}
               />
