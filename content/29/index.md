@@ -38,7 +38,7 @@ $ npm install pureimage ml-kmeans node-cache chroma-js sharp tempfile
 ColorExtractor를 사용하는 것은 매우 간단합니다. 아래는 이미지에서 색상을 추출하는 예제입니다.
 
 ```javascript
-import { ColorExtractor } from './path-to-color-extractor';
+import { ColorExtractor } from './core.js';
 
 const extractor = ColorExtractor.getInstance();
 
