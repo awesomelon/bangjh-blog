@@ -211,9 +211,7 @@ FSD는 명확한 비지니스 지향성, 엔티티 정의, 기능 및 구성 요
 또한 프로젝트에서 FSD 사용 사례와 공식 FSD 문서를 살펴볼 수도 있습니다.
 
 - [공식 문서](https://feature-sliced.design)
-- [예제. Github Client](https://feature-sliced.design)
-- [예제. Nike Sneaker and Footwear Store](https://github.com/noveogroup-amorgunov/nukeapp)
-- [예제. Sudoku](https://github.com/Shiyan7/sudoku-effector)
+- [예제 코드(Todo App)](https://github.com/awesomelon/fsd-todo)
 
 글이 조금 길었지만, 여러분이 새로운 것을 배웠기를 바랍니다. 이 글을 끝까지 읽어주셔서 감사 합니다. ❤️
 
