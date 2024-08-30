@@ -16,12 +16,12 @@ module.exports = {
     bio: {
       role: `Software Engineer`,
       description: ['비지니스 성장에 기여하는', '클린 코드를 지향하는', '동료들과 협업하는'],
-      thumbnail: '', // Path to the image in the 'asset' folder
+      thumbnail: '',
     },
     social: {
-      github: ``, // `https://github.com/zoomKoding`,
-      linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
-      email: `awesomelon@naver.com`, // `zoomkoding@gmail.com`,
+      github: ``,
+      linkedIn: ``,
+      email: `awesomelon@naver.com`,
     },
   },
 
