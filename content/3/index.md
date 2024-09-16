@@ -4,7 +4,7 @@ title: 구글 검색 너란 녀석...
 date: '2022-10-29 16:00:00'
 author: Bangjh
 tags: google googlesearch seo crawler
-categories: BASE
+categories: WIKI
 ---
 
 ![image1](image1.jpeg)

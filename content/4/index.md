@@ -4,7 +4,7 @@ title: 브라우저 주소창에 google.com을 입력한다면?
 date: '2022-11-12 17:00:00'
 author: Bangjh
 tags: cs dns browser tcp http
-categories: BASE
+categories: WIKI
 ---
 
 ## 브라우저 주소창에 google.com을 입력하면 어떤 일이 일어날까?
