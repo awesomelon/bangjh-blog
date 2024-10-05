@@ -1,7 +1,7 @@
 ---
 emoji: ☀️
 title: $(this).index()를 javascript로 만들기
-date: '2019-12-07 17:58:00'
+date: '2019-10-20 17:58:00'
 author: Bangjh
 tags: Javascript Jquery
 categories: FRONTEND
