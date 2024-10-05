@@ -1,43 +1,48 @@
 ---
 emoji: ☀️
-title: input 입력 시 한글만 입력하게 하고 싶을 때
-date: '2019-07-14 17:58:00'
+title: IE에서 ajax요청시 cache문제 처리하기
+date: '2019-08-09 17:58:00'
 author: Bangjh
-tags: javascript input 한글
+tags: javascript ajax cache IE
 categories: FRONTEND
 ---
 
-입력 폼 개발 시 사용자가 input에 한글만 적게 하고 싶을 때가 있다.
+## 문제
 
-처음엔 이런식으로 하면 될 줄 알았지만
+IE에서의 ajax 요청이 캐싱되는 문제
+정확히는 GET방식으로 요청할 때 캐싱되는 문제이다.
 
-```javascript
-var name = document.querySelector('#name');
-var onlyKorean = function() {
-  var pattern = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
-  this.value = this.value.replace(pattern, '');
-};
-name.addEventListener('keyup', onlyKorean);
-```
-
-크롬에선 정상 작동되는데 IE에서는 정상적으로 작동하지 않았다 (망할 IE 망했으면...);
-
-그때 여러 구글링을 통해 알아본 결과
-
-숫자나 영어는 123, abc 이렇게 적히는 반면
-
-한글은 ㄱ ㅏ ㅁ 을 합쳐서 감으로 만들어야 하기 때문에 keyup을 하면 안된다는 것이었다.
-
-그래서 위 코드를 수정한 것이 keypress이다.
+jQuery에서는 아래의 방식으로 이 문제를 해결한다.
 
 ```javascript
-// ... 생략
-name.addEventListener('keypress', onlyKorean);
+jQuery.ajax({ cache: false });
+```
+[jQuery공식 홈페이지](https://api.jquery.com/jquery.ajax/)를 가보니 이렇게 적혀있다.
+`cache (default: true, false for dataType 'script' and 'jsonp') Type: Boolean If set to false, it will force requested pages not to be cached by the browser. Note: Setting cache to false will only work correctly with HEAD and GET requests. It works by appending "_={timestamp}" to the GET parameters. The parameter is not needed for other types of requests, except in IE8 when a POST is made to a URL that has already been requested by a GET.`
+
+**It works by appending "_={timestamp}" to the GET parameters.**
+
+쿼리스트링으로 url에 timestamp를 붙여 요청을 해 이 문제를 해결한다.
+
+
+이것을 javascript로 변경하면 아래 방식이 될 것이다.
+
+javascript로 하면 아래 방식이다.
+
+```javascript
+var xhr = window.XMLHttpRequest
+    ? new XMLHttpRequest()
+    : new ActiveXObject('Microsoft.XMLHTTP');
+xhr.open('GET','test.php?_=' + new Date().getTime());
+xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+xhr.send(null);
 ```
 
-keypress로 적용하니 정상 작동하였다.
+## 결론
 
-**결론 한글 입력 시 이벤트를 걸려면 keyup 말고 keypress !!!!**
+GET방식만 캐시된다면 POST방식을 그냥 쓰면 되지 않을까 생각했지만 그건 아닌 것 같다. 전혀 RESTful하지 못하다.
+
+그렇다면 쿼리스트링을 상황에 맞게 적용하는 것이 제일 나은 방법이라 생각한다.
 
 ```toc
 
