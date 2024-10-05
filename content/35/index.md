@@ -7,7 +7,7 @@ tags: javascript input 한글
 categories: FRONTEND
 ---
 
-입력 폼 개발 시 사용자가 input에 한글만 적게 하고 싶을 때가 있다.
+## 입력 폼 개발 시 사용자가 input에 한글만 적게 하고 싶을 때가 있다.
 
 처음엔 이런식으로 하면 될 줄 알았지만
 

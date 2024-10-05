@@ -7,7 +7,7 @@ tags: Javascript Jquery
 categories: FRONTEND
 ---
 
-jquery를 쓰다보면 현재 클릭한 요소의 인덱스 값을 구하는 것을 많이 쓰는데 코드로 보면 다음과 같다.
+## jquery를 쓰다보면 현재 클릭한 요소의 인덱스 값을 구하는 것을 많이 쓰는데 코드로 보면 다음과 같다.
 
 ```javascript
 // 클릭한 요소의 형제들 중 자신이 몇 번째인지 확인
