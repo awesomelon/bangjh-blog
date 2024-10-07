@@ -33,7 +33,7 @@ function PageHeader({ siteTitle }) {
               </Link>
             </div>
             <div className="trailing-section">
-              <Link className="link" to="https://resume-j-ho.netlify.app" >
+              <Link className="link" to="https://resume-frontend-j-ho.netlify.app" >
                 Resume
               </Link>
               <Link className="link" to="https://github.com/awesomelon">
