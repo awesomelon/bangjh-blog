@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layout';
-import Seo from '../components/seo';
+import Head from '../components/seo';
 import PostHeader from '../components/post-header';
 import PostNavigator from '../components/post-navigator';
 import Post from '../models/post';
@@ -34,7 +34,7 @@ function BlogTemplate({ data }) {
 
   return (
     <Layout>
-      <Seo title={curPost?.title} description={curPost?.excerpt} />
+      <Head title={curPost?.title} description={curPost?.excerpt} />
       <PostHeader post={curPost} viewCount={viewCount} />
       <PostContent html={curPost.html} />
       <PostNavigator prevPost={prevPost} nextPost={nextPost} />

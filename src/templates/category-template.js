@@ -2,7 +2,7 @@ import React, { useMemo, useCallback } from 'react';
 import { navigate } from 'gatsby';
 
 import Layout from '../layout';
-import Seo from '../components/seo';
+import Head from '../components/seo';
 import Post from '../models/post';
 import CategoryPageHeader from '../components/category-page-header';
 import PostTabs from '../components/post-tabs';
@@ -26,7 +26,7 @@ function CategoryTemplate({ pageContext }) {
 
   return (
     <Layout>
-      <Seo title="방로그" />
+      <Head title="방로그" />
       <CategoryPageHeader title={categories[currentTabIndex]} subtitle={`${posts.length} posts`} />
       <PostTabs
         tabIndex={currentTabIndex}

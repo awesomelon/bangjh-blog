@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layout';
-import Seo from '../components/seo';
+import Head from '../components/seo';
 import Bio from '../components/bio';
 import Post from '../models/post';
 
@@ -18,7 +18,7 @@ function HomePage({ data }) {
 
   return (
     <Layout>
-      <Seo title="방로그" />
+      <Head title="방로그" />
       <Bio author={author} language={language} />
       <PostTabs
         posts={posts}
