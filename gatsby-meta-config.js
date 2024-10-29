@@ -11,6 +11,7 @@ module.exports = {
   },
   gSearch: 'Ru_ZXmzzTdp6QqzkVt7fgTOZAz82h8VQ0O6T6TnYTak',
   ga: '337776443', // Google Analytics Tracking ID
+  ads: "ca-pub-1367328009908538",
   author: {
     name: `방재호`,
     bio: {
