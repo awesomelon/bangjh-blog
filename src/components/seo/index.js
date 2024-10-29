@@ -35,6 +35,7 @@ export const Head = ({ description, title }) => {
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1367328009908538"
         crossOrigin="anonymous"
       />
+
     </>
   );
 };
