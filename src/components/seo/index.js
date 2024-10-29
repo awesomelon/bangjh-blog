@@ -30,8 +30,6 @@ export const Head = ({ description, title }) => {
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={site.siteMetadata.ogImage} />
-      <meta name="google-site-verification" content={site.siteMetadata.gSearch} />
-      <meta name="google-adsense-account" content={site.siteMetadata.ads} />
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1367328009908538"
