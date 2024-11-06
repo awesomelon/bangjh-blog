@@ -7,28 +7,25 @@ import PostNavigator from '../components/post-navigator';
 import Post from '../models/post';
 import PostContent from '../components/post-content';
 import Utterances from '../components/utterances';
+import { CounterAPI } from 'counterapi';
 
 function BlogTemplate({ data }) {
   const [viewCount, setViewCount] = useState(null);
-
   const curPost = new Post(data.cur);
   const prevPost = data.prev && new Post(data.prev);
   const nextPost = data.next && new Post(data.next);
   const { siteUrl, comments } = data.site?.siteMetadata;
   const utterancesRepo = comments?.utterances?.repo;
+  const counter = new CounterAPI();
 
   useEffect(() => {
     if (!siteUrl) return;
     const namespace = siteUrl.replace(/(^\w+:|^)\/\//, '');
     const key = curPost.slug.replace(/\//g, '');
 
-    fetch(
-      `https://api.countapi.xyz/${
-        process.env.NODE_ENV === 'development' ? 'get' : 'hit'
-      }/${namespace}/${key}`,
-    ).then(async (result) => {
-      const data = await result.json();
-      setViewCount(data.value);
+    counter.up(namespace, key).then((res) => {
+      const count = res.Count;
+      setViewCount(count);
     });
   }, [siteUrl, curPost.slug]);
 
