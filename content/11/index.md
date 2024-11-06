@@ -4,7 +4,7 @@ title: LLM (Large Language Model) 및 사용 후기
 date: '2023-04-08 20:15:00'
 author: Bangjh
 tags: LLM Vicuna LLaMA Alpaca ChatGPT
-categories: AI
+categories: WIKI
 ---
 
 대규모 데이터 셋을 학습하여 자연어 처리(NLP) 성능을 향상시키는 인공지능 모델입니다. <br >

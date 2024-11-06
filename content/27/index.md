@@ -4,7 +4,7 @@ title: LoRA 학습법 (colab)
 date: '2023-04-16 20:15:00'
 author: Bangjh
 tags: LLM Stable diffusion LoRA Colab
-categories: AI
+categories: WIKI
 ---
 
 Google Colab을 통해 Stable Diffusion LoRA 학습 방법을 소개하려고 합니다.

@@ -4,7 +4,7 @@ title: DALL-E 및 사용 후기
 date: '2023-04-15 20:15:00'
 author: Bangjh
 tags: DALL-E
-categories: AI
+categories: WIKI
 ---
 
 OpenAI에서 개발한 이미지 생성 AI입니다.

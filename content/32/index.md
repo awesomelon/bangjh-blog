@@ -4,7 +4,7 @@ title: Perplexity
 date: '2024-09-28 15:58:00'
 author: Bangjh
 tags: AI Perplexity 검색엔진 퍼플렉시티
-categories: AI
+categories: WIKI
 ---
 
 # Perplexity AI 리뷰
