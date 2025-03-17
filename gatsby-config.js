@@ -52,7 +52,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
-        publisherId: metaConfig.ads
+        publisherId: metaConfig.ads,
       },
     },
     {
@@ -139,5 +139,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
   ],
 };
