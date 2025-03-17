@@ -2,7 +2,7 @@
 emoji: ☀️
 title: NestJs(Fastify) + MongoDB 템플릿 만들기
 date: '2023-11-17 15:00:00'
-author: Bangjh
+author: j-ho
 tags: nestjs fastify mongodb
 categories: BACKEND
 ---

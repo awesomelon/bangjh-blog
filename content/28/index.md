@@ -2,14 +2,14 @@
 emoji: ☀️
 title: 기능 분할 설계(Feature-Sliced Design, FSD)
 date: '2024-09-14 16:26:00'
-author: Bangjh
+author: j-ho
 tags: FSD FRONTEND
 categories: FRONTEND
 ---
 
 # 소개
 
-기능 분할 설계 (Feature-Sliced Design, FSD)는 대규모 프론트엔드 애플리케이션을 구조화하기 위한 현대적인 아키텍처 방법론입니다. 
+기능 분할 설계 (Feature-Sliced Design, FSD)는 대규모 프론트엔드 애플리케이션을 구조화하기 위한 현대적인 아키텍처 방법론입니다.
 FSD는 애플리케이션을 기능 단위로 분할하고, 각 기능을 독립적으로 개발, 테스트, 유지보수할 수 있도록 하는 것을 목표로 합니다.
 
 <br />
@@ -18,9 +18,9 @@ FSD는 애플리케이션을 기능 단위로 분할하고, 각 기능을 독립
 
 FSD는 다음과 같은 핵심 원칙을 기반으로 합니다.
 
-1. **기능 중심 설계**: 애플리케이션을 비즈니스 기능 단위로 구성합니다. 
-2. **계층화**: 코드를 여러 계층으로 구분하여 관심사를 분리합니다. 
-3. **단방향 의존성**: 상위 계층은 하위 계층에만 의존할 수 있습니다. 
+1. **기능 중심 설계**: 애플리케이션을 비즈니스 기능 단위로 구성합니다.
+2. **계층화**: 코드를 여러 계층으로 구분하여 관심사를 분리합니다.
+3. **단방향 의존성**: 상위 계층은 하위 계층에만 의존할 수 있습니다.
 4. **명시적 공개 인터페이스**: 각 모듈은 명확한 공개 API를 통해 상호작용합니다.
 5. **구성 가능성**: 작은 단위의 기능을 조합하여 더 큰 기능을 만들 수 있습니다.
 
@@ -42,14 +42,13 @@ FSD는 다음과 같은 핵심 원칙을 기반으로 합니다.
 
 **표준 FSD 레이어 구조**
 
-- **app**: 애플리케이션 초기화 및 글로벌 설정 
+- **app**: 애플리케이션 초기화 및 글로벌 설정
 - **processes**: 복잡한 비즈니스 프로세스 관리 (선택적)
-- **pages**: 라우팅 가능한 화면 정의 
-- **widgets**: 재사용 가능한 UI 블록 
-- **features**: 사용자 시나리오와 비즈니스 로직 
-- **entities**: 도메인 객체와 관련 로직 
+- **pages**: 라우팅 가능한 화면 정의
+- **widgets**: 재사용 가능한 UI 블록
+- **features**: 사용자 시나리오와 비즈니스 로직
+- **entities**: 도메인 객체와 관련 로직
 - **shared**: 공유 유틸리티 및 UI 키트
-
 
 ### app 레이어
 
@@ -108,13 +107,13 @@ FSD는 다음과 같은 핵심 원칙을 기반으로 합니다.
 
 ```markdown
 src/
-  features/
-    auth/  // 인증 관련 슬라이스
-    product-catalog/  // 상품 목록 관련 슬라이스
-    shopping-cart/  // 장바구니 관련 슬라이스
-  entities/
-    user/  // 사용자 엔티티 슬라이스
-    product/  // 상품 엔티티 슬라이스
+features/
+auth/ // 인증 관련 슬라이스
+product-catalog/ // 상품 목록 관련 슬라이스
+shopping-cart/ // 장바구니 관련 슬라이스
+entities/
+user/ // 사용자 엔티티 슬라이스
+product/ // 상품 엔티티 슬라이스
 ```
 
 <br />
@@ -125,29 +124,29 @@ src/
 
 ### 주요 세그먼트
 
-- **ui**: UI 컴포넌트 
+- **ui**: UI 컴포넌트
 - **model**: 비즈니스 로직 (상태 관리, 액션, 셀렉터 등)
-- **api**: 외부 서비스와의 통신 
-- **lib**: 유틸리티 함수 
+- **api**: 외부 서비스와의 통신
+- **lib**: 유틸리티 함수
 - **config**: 설정 및 상수
 
 ### 예시
 
 ```markdown
 features/
-  auth/
-    ui/
-      LoginForm.tsx
-      RegisterForm.tsx
-    model/
-      authSlice.ts
-      authSelectors.ts
-    api/
-      authApi.ts
-    lib/
-      passwordValidation.ts
-    config/
-      authConstants.ts
+auth/
+ui/
+LoginForm.tsx
+RegisterForm.tsx
+model/
+authSlice.ts
+authSelectors.ts
+api/
+authApi.ts
+lib/
+passwordValidation.ts
+config/
+authConstants.ts
 ```
 
 ## Public API
@@ -183,31 +182,31 @@ export { fetchUser } from './api/authApi';
 
 ```markdown
 src/
-  app/
-    index.tsx
-    store.ts
-    routes.ts
-  processes/
-    checkout/
-  pages/
-    HomePage/
-    ProductPage/
-    CartPage/
-  widgets/
-    Header/
-    Footer/
-    ProductList/
-  features/
-    auth/
-    product-search/
-    add-to-cart/
-  entities/
-    user/
-    product/
-  shared/
-    ui/
-    lib/
-    config/
+app/
+index.tsx
+store.ts
+routes.ts
+processes/
+checkout/
+pages/
+HomePage/
+ProductPage/
+CartPage/
+widgets/
+Header/
+Footer/
+ProductList/
+features/
+auth/
+product-search/
+add-to-cart/
+entities/
+user/
+product/
+shared/
+ui/
+lib/
+config/
 ```
 
 <br />
@@ -247,13 +246,16 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const productSlice = createSlice({
   name: 'product',
-  initialState: { /* ... */ },
-  reducers: { /* ... */ },
+  initialState: {
+    /* ... */
+  },
+  reducers: {
+    /* ... */
+  },
 });
 
 export const { actions, reducer } = productSlice;
 ```
-
 
 ```typescript
 // app/store.ts
@@ -283,9 +285,9 @@ export const store = configureStore({
 
 # FSD 적용 시 고려 사항
 
-1. **학습 곡선**: 팀 전체가 FSD 개념을 이해하고 동의해야 함 
-2. **오버엔지니어링 주의**: 작은 프로젝트에서는 복잡도가 증가할 수 있음 
-3. **일관성 유지**: 프로젝트 전반에 걸쳐 FSD 규칙을 일관되게 적용해야 함 
+1. **학습 곡선**: 팀 전체가 FSD 개념을 이해하고 동의해야 함
+2. **오버엔지니어링 주의**: 작은 프로젝트에서는 복잡도가 증가할 수 있음
+3. **일관성 유지**: 프로젝트 전반에 걸쳐 FSD 규칙을 일관되게 적용해야 함
 4. **리팩토링 비용**: 기존 프로젝트를 FSD로 전환하는 데 상당한 노력이 필요할 수 있음
 
 <br />
@@ -295,14 +297,12 @@ export const store = configureStore({
 FSD는 대규모 프론트엔드 프로젝트를 효과적으로 구조화하는 강력한 방법론입니다. 기능 중심의 모듈화된 접근 방식을 통해
 코드의 재사용성, 유지보수성, 확장성을 크게 향상시킬 수 있습니다. 적절히 적용된다면, FSD는 복잡한 프론트엔드 애플리케이션 개발의 많은 일반적인 문제를 해결하고, 더 나은 코드 구조와 개발 경험을 제공할 것입니다.
 
-
 - [공식 문서](https://feature-sliced.design)
 - [예제 코드(Todo App)](https://github.com/awesomelon/fsd-todo)
 
 ---
 
 > [참고](https://dev.to/m_midas/feature-sliced-design-the-best-frontend-architecture-4noj)
-
 
 ```toc
 

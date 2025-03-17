@@ -2,7 +2,7 @@
 emoji: ☀️
 title: Untagged Docker Image 삭제 및 Exited된 Process 삭제
 date: '2023-12-15 16:00:00'
-author: Bangjh
+author: j-ho
 tags: Docker
 categories: DEVOPS
 ---

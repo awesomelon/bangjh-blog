@@ -2,7 +2,7 @@
 emoji: ☀️
 title: CI/CD란?
 date: '2022-10-22 13:00:00'
-author: Bangjh
+author: j-ho
 tags: CI CD ci cd
 categories: WIKI
 ---

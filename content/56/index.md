@@ -2,7 +2,7 @@
 emoji: ☀️
 title: DLLM 기존 LLM과의 차이점과 새로운 가능성
 date: '2025-03-06 16:49:34'
-author: Bangjh
+author: j-ho
 tags: DLLM, LLM, Diffusion
 categories: WIKI
 ---

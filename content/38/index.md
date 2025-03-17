@@ -2,7 +2,7 @@
 emoji: ☀️
 title: iOS 모바일에서 Click 이벤트 지연 문제 해결하기
 date: '2020-02-07 12:58:00'
-author: Bangjh
+author: j-ho
 tags: javascript ios click event
 categories: FRONTEND
 ---

@@ -2,7 +2,7 @@
 emoji: ☀️
 title: 대용량 엑셀 다운로드 이슈
 date: '2023-08-05 16:00:00'
-author: Bangjh
+author: j-ho
 tags: 대용량 엑셀 데이터 xlsx.js XLSX
 categories: BACKEND
 ---

@@ -2,14 +2,14 @@
 emoji: ☀️
 title: navigator.onLine을 활용한 네트워크 상태 관리
 date: '2024-11-18 14:17:00'
-author: Bangjh
+author: j-ho
 tags: navigator.onLine, 네트워크 상태, 오프라인 모드, 온라인 모드
 categories: WIKI
 ---
 
-웹 애플리케이션을 개발하다 보면 사용자의 네트워크 상태에 따라 기능을 다르게 동작시켜야 하는 경우가 자주 있습니다. 
-예를 들어 사용자가 오프라인 상태일 때는 데이터를 로컬에 저장하고, 다시 온라인 상태로 전환되면 서버와 동기화해야 할 수 있습니다. 
-이러한 기능은 특히 모바일 앱이나 네트워크가 불안정한 환경에서 웹 애플리케이션을 사용하는 사용자에게 매우 유용합니다. 
+웹 애플리케이션을 개발하다 보면 사용자의 네트워크 상태에 따라 기능을 다르게 동작시켜야 하는 경우가 자주 있습니다.
+예를 들어 사용자가 오프라인 상태일 때는 데이터를 로컬에 저장하고, 다시 온라인 상태로 전환되면 서버와 동기화해야 할 수 있습니다.
+이러한 기능은 특히 모바일 앱이나 네트워크가 불안정한 환경에서 웹 애플리케이션을 사용하는 사용자에게 매우 유용합니다.
 React에서는 JavaScript의 `navigator.onLine` 속성을 활용하여 이러한 네트워크 상태를 쉽게 감지하고 처리할 수 있습니다.
 
 ## `navigator.onLine`이란?
@@ -65,11 +65,7 @@ function App() {
     };
   }, []);
 
-  return (
-    <div>
-      {isOnline ? '온라인 상태입니다.' : '오프라인 상태입니다.'}
-    </div>
-  );
+  return <div>{isOnline ? '온라인 상태입니다.' : '오프라인 상태입니다.'}</div>;
 }
 
 export default App;
@@ -107,11 +103,7 @@ function NetworkStatus() {
     return null; // 온라인 상태이면 아무 것도 표시하지 않음
   }
 
-  return (
-    <div style={{ color: 'red' }}>
-      현재 오프라인 상태입니다.
-    </div>
-  );
+  return <div style={{ color: 'red' }}>현재 오프라인 상태입니다.</div>;
 }
 
 export default NetworkStatus;
@@ -138,7 +130,7 @@ async function isInternetAvailable() {
     const response = await fetch('https://www.google.com/favicon.ico', {
       method: 'HEAD',
       cache: 'no-store',
-      signal: controller.signal
+      signal: controller.signal,
     });
 
     clearTimeout(timeoutId);
@@ -203,11 +195,7 @@ import useOnlineStatus from './useOnlineStatus';
 function App() {
   const isOnline = useOnlineStatus();
 
-  return (
-    <div>
-      {isOnline ? '온라인 상태입니다.' : '오프라인 상태입니다.'}
-    </div>
-  );
+  return <div>{isOnline ? '온라인 상태입니다.' : '오프라인 상태입니다.'}</div>;
 }
 
 export default App;
@@ -231,12 +219,11 @@ if ('connection' in navigator) {
 
 ## 결론
 
-React에서 `navigator.onLine`과 `online`/`offline` 이벤트를 활용하면 사용자의 네트워크 상태를 손쉽게 관리할 수 있습니다. 
-특히, 네트워크 상태에 따라 사용자에게 적절한 정보를 제공하거나 데이터 동기화 작업을 수행함으로써 보다 나은 사용자 경험을 제공할 수 있습니다. 
+React에서 `navigator.onLine`과 `online`/`offline` 이벤트를 활용하면 사용자의 네트워크 상태를 손쉽게 관리할 수 있습니다.
+특히, 네트워크 상태에 따라 사용자에게 적절한 정보를 제공하거나 데이터 동기화 작업을 수행함으로써 보다 나은 사용자 경험을 제공할 수 있습니다.
 
-다만, `navigator.onLine`이 실제 인터넷 접속 가능성을 보장하지 않는다는 점을 기억하고, 중요한 작업에서는 추가적인 네트워크 상태 확인을 병행하는 것이 좋습니다. 
+다만, `navigator.onLine`이 실제 인터넷 접속 가능성을 보장하지 않는다는 점을 기억하고, 중요한 작업에서는 추가적인 네트워크 상태 확인을 병행하는 것이 좋습니다.
 이를 위해 커스텀 훅을 만들어 여러 컴포넌트에서 재사용할 수 있으며, 네트워크 상태에 따라 동작하는 다양한 로직을 통해 사용자 경험을 최적화할 수 있습니다.
-
 
 ```toc
 

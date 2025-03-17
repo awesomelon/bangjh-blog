@@ -2,7 +2,7 @@
 emoji: ☀️
 title: AI를 이용한 Git Commit 메시지 생성하기
 date: '2024-08-30 14:58:00'
-author: Bangjh
+author: j-ho
 tags: AI Git ClaudeAI
 categories: PLAYGROUND
 ---
@@ -163,8 +163,6 @@ $ commit-ai -l ko  # 한 번의 커밋만 한국어로 생성
 앞으로도 사용자 피드백을 반영하여 지속적으로 개선해 나갈 예정입니다. 새로운 기능 추가, 사용성 개선, 더 많은 언어 지원 등을 통해 이 도구가 더욱 많은 개발자들에게 도움이 되기를 바랍니다. 이 도구가 여러분의 개발 워크플로우에 실질적인 도움이 되길 바랍니다. `commit-ai`와 함께 더 효율적인 개발을 경험해 보세요!
 
 - [소스 코드](https://github.com/awesomelon/commitAI)
-
-
 
 ```toc
 

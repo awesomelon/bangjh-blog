@@ -2,7 +2,7 @@
 emoji: ☀️
 title: $(this).index()를 javascript로 만들기
 date: '2019-10-20 17:58:00'
-author: Bangjh
+author: j-ho
 tags: Javascript Jquery
 categories: FRONTEND
 ---
@@ -23,7 +23,6 @@ $(element).index(this);
 우선 현재 클릭한 요소의 부모 요소부터 찾아야 할 듯하다.
 
 함수로 만들어 보겠다
-
 
 ```javascript
 function getParentNode(element) {
@@ -68,7 +67,6 @@ mdn을 찾아보면 indexOf 사용법이 이렇게 적혀 있다.
 배열 내의 요소의 최초의 인덱스. 발견되지 않으면 -1.
 
 **여기서 우린 arr부분을 call로 element.parentNode.children로 바꿔주었다.**
-
 
 그다음으로 추가해야할 부분은 특정 element들중 자신이 몇 번째 element인지 확인해야하는 부분이다.
 
@@ -115,10 +113,7 @@ range 인자가 있을 때만 적용되게 하기 위해 if문을 추가했다.
 
 ```
 
-
 이것으로 swiper안에 youtube넣기를 마치겠습니다 :)
-
-
 
 ```toc
 

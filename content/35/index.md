@@ -2,7 +2,7 @@
 emoji: ☀️
 title: input 입력 시 한글만 입력하게 하고 싶을 때
 date: '2019-07-14 17:58:00'
-author: Bangjh
+author: j-ho
 tags: javascript input 한글
 categories: FRONTEND
 ---
@@ -13,7 +13,7 @@ categories: FRONTEND
 
 ```javascript
 var name = document.querySelector('#name');
-var onlyKorean = function() {
+var onlyKorean = function () {
   var pattern = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
   this.value = this.value.replace(pattern, '');
 };

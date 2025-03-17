@@ -2,7 +2,7 @@
 emoji: ☀️
 title: 배치 작업 어디까지 해봤니?
 date: '2022-11-26 11:00:00'
-author: Bangjh
+author: j-ho
 tags: mongodb batch
 categories: BACKEND
 ---

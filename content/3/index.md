@@ -2,7 +2,7 @@
 emoji: ☀️
 title: 구글 검색 너란 녀석...
 date: '2022-10-29 16:00:00'
-author: Bangjh
+author: j-ho
 tags: google googlesearch seo crawler
 categories: WIKI
 ---

@@ -2,7 +2,7 @@
 emoji: ☀️
 title: kafka가 뭐야?
 date: '2023-05-13 16:24:00'
-author: Bangjh
+author: j-ho
 tags: kafka message pub/sub queue
 categories: BACKEND
 ---

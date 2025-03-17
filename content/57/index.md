@@ -2,7 +2,7 @@
 emoji: ☀️
 title: Create React App의 종료
 date: '2025-03-07 09:20:34'
-author: Bangjh
+author: j-ho
 tags: Create React App, React, CRA, 종료
 categories: WIKI
 ---

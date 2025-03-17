@@ -2,7 +2,7 @@
 emoji: ☀️
 title: iPhone에서 Input Focus 시 Zoom 문제 해결하기
 date: '2020-11-25 09:58:00'
-author: Bangjh
+author: j-ho
 tags: IOS CSS input zoom
 categories: FRONTEND
 ---

@@ -2,7 +2,7 @@
 emoji: ☀️
 title: 함수형 프로그래밍 (Functional Programming)
 date: '2024-08-01 14:58:00'
-author: Bangjh
+author: j-ho
 tags: FP Functional Programming
 categories: WIKI
 ---
@@ -71,12 +71,12 @@ print(new_list)  # [1, 2, 3, 4]
 const multiply = (factor) => (number) => number * factor;
 
 const double = multiply(2);
-console.log(double(5));  // 10
+console.log(double(5)); // 10
 
 // 함수를 인자로 받는 고차 함수
 const applyOperation = (func, a, b) => func(a, b);
 const add = (a, b) => a + b;
-console.log(applyOperation(add, 5, 3));  // 8
+console.log(applyOperation(add, 5, 3)); // 8
 ```
 
 ### 4. 재귀
@@ -151,7 +151,6 @@ print(next(gen))  # 2
 - **함수 합성 (Function Composition)**: 여러 함수를 조합하여 새로운 함수를 만드는 기법입니다.
 - **패턴 매칭 (Pattern Matching)**: 주어진 데이터의 형태에 따라 다른 동작을 수행하는 기법입니다.
 - **대수적 데이터 타입 (Algebraic Data Type)**: 데이터의 다양한 구조를 표현하기 위한 타입 시스템입니다.
-
 
 ```toc
 

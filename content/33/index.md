@@ -2,7 +2,7 @@
 emoji: ☀️
 title: Swiper.js 슬라이더 안에 youtube 영상 넣기
 date: '2019-12-06 14:58:00'
-author: Bangjh
+author: j-ho
 tags: Javascript Swiper.js youtube
 categories: FRONTEND
 ---
@@ -11,8 +11,8 @@ categories: FRONTEND
 
 기본적인 swiper를 생성하는 방법은 [이 링크](https://swiperjs.com)로 들어가면 자세히 알 수 있다.
 
-
 #### index.html
+
 ```html
 <!-- 
     youtube 링크는 자신이 원하는 링크로 바꾸시면 됩니다. 
@@ -36,6 +36,7 @@ categories: FRONTEND
 ```
 
 #### youtube.js
+
 기본적인 yotube 동영상을 생성하는 방법은 [이 링크](https://developers.google.com/youtube/iframe_api_reference#Getting_Started)로 들어가면 자세히 알 수 있다.
 
 ```javascript
@@ -61,8 +62,8 @@ function makeYoutube(id, link) {
     playerVars: { autoplay: 1, controls: 0 },
     videoId: link,
     events: {
-      onReady: onPlayerReady
-    }
+      onReady: onPlayerReady,
+    },
   });
 
   function onPlayerReady(event) {
@@ -84,8 +85,8 @@ function makeYoutube(id, link) {
 */
 
 function yotubeOnClick() {
-  [].forEach.call(document.querySelectorAll('.youtube'), function(el, index) {
-    el.addEventListener('click', function() {
+  [].forEach.call(document.querySelectorAll('.youtube'), function (el, index) {
+    el.addEventListener('click', function () {
       var thisYoutubeLink = this.getAttribute('data-youtubeLink');
       this.id = makeRandomId();
       makeYoutube(this.id, thisYoutubeLink);
@@ -113,12 +114,10 @@ function makeRandomId() {
   for (var i = 0; i < 11; i++) text += possible.charAt(Math.floor(Math.random() * possible.length));
 
   return text;
-};
+}
 ```
 
 이것으로 swiper안에 youtube넣기를 마치겠습니다 :)
-
-
 
 ```toc
 

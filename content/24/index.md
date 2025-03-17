@@ -2,7 +2,7 @@
 emoji: ☀️
 title: Drone CI와 Portainer를 이용한 CI/CD
 date: '2023-11-24 16:00:00'
-author: Bangjh
+author: j-ho
 tags: portainer drone ci CI/CD Docker Swarm
 categories: DEVOPS
 ---

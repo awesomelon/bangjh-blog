@@ -2,7 +2,7 @@
 emoji: ☀️
 title: image 높이 값 불러올 때 주의점
 date: '2019-06-29 17:58:00'
-author: Bangjh
+author: j-ho
 tags: javascript image height
 categories: FRONTEND
 ---

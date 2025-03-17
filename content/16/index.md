@@ -2,7 +2,7 @@
 emoji: ☀️
 title: ArgoCD err_too_many_redirects
 date: '2023-07-08 22:00:00'
-author: Bangjh
+author: j-ho
 tags: ArgoCD err_too_many_redirects debugging
 categories: DEVOPS
 ---

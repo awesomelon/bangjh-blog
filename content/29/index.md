@@ -2,8 +2,8 @@
 emoji: ☀️
 title: 이미지에서 색상 추출하기
 date: '2024-07-22 16:26:00'
-author: Bangjh
-tags: color extractor image palette 
+author: j-ho
+tags: color extractor image palette
 categories: PLAYGROUND
 ---
 
@@ -20,10 +20,9 @@ categories: PLAYGROUND
 
 이미지에서 색상을 추출하는 사이트는 많았지만, 대부분 스포이드로 해당 픽셀의 컬러값을 가져오거나 그렇지 않으면 이미지 내에 있는 색상들을 전부 가져오는 것들이 대부분이였습니다.
 
-
 ## 첫 번째 도전: 성능 최적화
 
-가장 먼저 부딪힌 문제는 성능이었습니다.  처음에는 모든 픽셀을 분석했는데, 큰 이미지를 처리할 때마다 성능이 떨어지는 문제가 있었습니다.
+가장 먼저 부딪힌 문제는 성능이었습니다. 처음에는 모든 픽셀을 분석했는데, 큰 이미지를 처리할 때마다 성능이 떨어지는 문제가 있었습니다.
 
 ### 해결책: 픽셀 샘플링
 
@@ -74,14 +73,13 @@ Javascript로 시작했다가 타입 관련 버그로 고생했습니다.
 
 ## 결론
 
-Image-Colors 라이브러리를 만들면서 많은 것을 배웠습니다. 
+Image-Colors 라이브러리를 만들면서 많은 것을 배웠습니다.
 
 기술적인 도전을 겪으면서 성장할 수 있는 기회가 되었습니다.
 
 ---
 
 - [소스 코드](https://github.com/awesomelon/image-colors)
-
 
 ```toc
 

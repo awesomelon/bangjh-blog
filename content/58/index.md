@@ -2,7 +2,7 @@
 emoji: ☀️
 title: Anthropic MCP
 date: '2025-03-11 10:10:34'
-author: Bangjh
+author: j-ho
 tags: MCP, AI, Anthropci
 categories: WIKI
 ---

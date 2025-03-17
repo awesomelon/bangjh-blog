@@ -2,7 +2,7 @@
 emoji: ☀️
 title: 무작위 로그인 시도 (Invalid user {name} from {ip address} port {port})
 date: '2023-11-20 16:00:00'
-author: Bangjh
+author: j-ho
 tags: Linux login invalid user preauth
 categories: DEVOPS
 ---

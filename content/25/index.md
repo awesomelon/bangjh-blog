@@ -2,7 +2,7 @@
 emoji: ☀️
 title: Terraform으로 AWS Infra 구축하기
 date: '2023-11-26 16:00:00'
-author: Bangjh
+author: j-ho
 tags: Terraform IaC AWS
 categories: DEVOPS
 ---

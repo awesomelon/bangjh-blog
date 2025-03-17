@@ -2,7 +2,7 @@
 emoji: ☀️
 title: Redis-Stat 레디스 모니터링
 date: '2022-12-10 21:24:00'
-author: Bangjh
+author: j-ho
 tags: redis monitoring
 categories: BACKEND
 ---

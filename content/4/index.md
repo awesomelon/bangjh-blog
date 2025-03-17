@@ -2,7 +2,7 @@
 emoji: ☀️
 title: 브라우저 주소창에 google.com을 입력한다면?
 date: '2022-11-12 17:00:00'
-author: Bangjh
+author: j-ho
 tags: cs dns browser tcp http
 categories: WIKI
 ---
