@@ -1078,3 +1078,119 @@
   font-size: 15px;
   color: #6a737d;
 }
+
+/* 마크다운 스타일 WIKI 오버라이드 */
+.markdown {
+  p {
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.3em;
+  }
+
+  ul,
+  ol {
+    padding-left: 2em;
+
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  a {
+    color: #0366d6;
+    text-decoration: none;
+    border-bottom: 1px dotted #0366d6;
+
+    &:hover {
+      background-color: rgba(3, 102, 214, 0.1);
+    }
+  }
+
+  pre {
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 5px;
+    padding: 1em;
+    overflow-x: auto;
+  }
+
+  code {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 90%;
+  }
+
+  img {
+    max-width: 100%;
+    border: 1px solid #e1e4e8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  blockquote {
+    margin-left: 0;
+    padding: 0.5em 1em;
+    border-left: 3px solid #e1e4e8;
+    background-color: rgba(0, 0, 0, 0.02);
+    font-style: italic;
+  }
+
+  hr {
+    height: 1px;
+    background-color: #e1e4e8;
+    border: none;
+    margin: 2em 0;
+  }
+}
+
+html[data-theme='dark'] .markdown {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+
+  a {
+    color: #58a6ff;
+    border-bottom-color: #58a6ff;
+
+    &:hover {
+      background-color: rgba(88, 166, 255, 0.1);
+    }
+  }
+
+  pre {
+    background-color: #2d333b;
+    border-color: #444c56;
+  }
+
+  code {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  img {
+    border-color: #444c56;
+  }
+
+  blockquote {
+    border-left-color: #4f5864;
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+
+  hr {
+    background-color: #444c56;
+  }
+}

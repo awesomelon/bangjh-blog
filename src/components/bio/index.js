@@ -9,7 +9,7 @@ function Bio({ author, language = 'ko' }) {
   const { bio, social, name } = author;
   return (
     <div className="bio">
-      {language === 'ko' ? (
+      {/* {language === 'ko' ? (
         <div className="introduction korean">
           <p className="title">
             안녕하세요.
@@ -41,7 +41,7 @@ function Bio({ author, language = 'ko' }) {
             <IconButtonBar links={social} />
           </div>
         </div>
-      )}
+      )} */}
       <div className="thumbnail-wrapper">
         <Image style={{ width: 250, height: 250 }} src={bio.thumbnail} alt="thumbnail" />
       </div>

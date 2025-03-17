@@ -1,0 +1,145 @@
+/* 도트 형식의 WIKI 스타일 */
+
+// 배경에 도트 패턴 적용
+html {
+  --dot-color: rgba(0, 0, 0, 0.1);
+  --dot-size: 1px;
+  --dot-space: 15px;
+
+  background-color: #f8f8f8;
+  background-image: radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size)),
+    radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size));
+  background-size: var(--dot-space) var(--dot-space);
+  background-position: 0 0, calc(var(--dot-space) / 2) calc(var(--dot-space) / 2);
+}
+
+// 다크 모드 도트 패턴
+html[data-theme='dark'] {
+  --dot-color: rgba(255, 255, 255, 0.1);
+
+  background-color: #232326;
+  background-image: radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size)),
+    radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size));
+  background-size: var(--dot-space) var(--dot-space);
+  background-position: 0 0, calc(var(--dot-space) / 2) calc(var(--dot-space) / 2);
+}
+
+// 콘텐츠 컨테이너 스타일
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 768px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+// 다크 모드 콘텐츠 컨테이너
+html[data-theme='dark'] .page-content {
+  background-color: rgba(40, 40, 45, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// 링크 스타일
+a {
+  color: #0366d6;
+  text-decoration: none;
+  border-bottom: 1px dotted #0366d6;
+
+  &:hover {
+    background-color: rgba(3, 102, 214, 0.1);
+  }
+}
+
+html[data-theme='dark'] a {
+  color: #58a6ff;
+  border-bottom: 1px dotted #58a6ff;
+
+  &:hover {
+    background-color: rgba(88, 166, 255, 0.1);
+  }
+}
+
+// 제목 스타일
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  font-weight: 600;
+}
+
+// 코드 블록 스타일
+pre,
+code {
+  font-family: 'Consolas', 'Monaco', monospace;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f6f8fa;
+  padding: 16px;
+  border: 1px solid #e1e4e8;
+  overflow-x: auto;
+}
+
+html[data-theme='dark'] pre {
+  background-color: #2d333b;
+  border-color: #444c56;
+}
+
+// 인용 블록
+blockquote {
+  border-left: 3px solid #e1e4e8;
+  padding-left: 1em;
+  color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+}
+
+html[data-theme='dark'] blockquote {
+  border-left-color: #4f5864;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+// 표 스타일
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th,
+td {
+  border: 1px solid var(--markdown-table-border-color);
+  padding: 8px 12px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--markdown-table-even-cell-background-color);
+}
+
+// 적용할 추가 위키 스타일 요소들
+.wiki-tag {
+  display: inline-block;
+  background-color: #f1f8ff;
+  border: 1px solid #c8e1ff;
+  border-radius: 3px;
+  padding: 0.2em 0.5em;
+  margin: 0 0.2em;
+  font-size: 0.9em;
+}
+
+html[data-theme='dark'] .wiki-tag {
+  background-color: #182030;
+  border-color: #30363d;
+}
