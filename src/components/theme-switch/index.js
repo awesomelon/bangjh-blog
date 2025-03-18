@@ -6,7 +6,18 @@ import { getValueFromLocalStorage, setValueToLocalStorage } from '../../utils/lo
 import './style.scss';
 
 function ThemeSwitch() {
-  const [isDarkMode, setIsDarkMode] = useState(getValueFromLocalStorage('isDarkMode'));
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    // 클라이언트 사이드에서만 실행
+    if (typeof window !== 'undefined') {
+      const savedMode = getValueFromLocalStorage('isDarkMode');
+      // 저장된 값이 없으면 시스템 설정 확인
+      if (savedMode === null || savedMode === undefined) {
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+      return savedMode;
+    }
+    return false;
+  });
 
   useEffect(() => {
     setValueToLocalStorage('isDarkMode', isDarkMode);

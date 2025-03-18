@@ -4,6 +4,12 @@
 @use '../styles/colors'as *;
 @use '../styles/_dotted-wiki'as *;
 
+/* 초기 렌더링 시 깜빡임 방지 */
+html {
+  visibility: visible;
+  opacity: 1;
+}
+
 * {
   box-sizing: border-box;
   appearance: none;
@@ -17,7 +23,8 @@ html {
 }
 
 body {
-  background-color: transparent !important;
+  background-color: var(--background-color) !important;
+  transition: background-color 0.3s ease;
 }
 
 a {
