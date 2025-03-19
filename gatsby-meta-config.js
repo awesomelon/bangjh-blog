@@ -11,16 +11,16 @@ module.exports = {
   },
   gSearch: 'Ru_ZXmzzTdp6QqzkVt7fgTOZAz82h8VQ0O6T6TnYTak',
   ga: '337776443', // Google Analytics Tracking ID
-  ads: "ca-pub-1367328009908538",
+  ads: 'ca-pub-1367328009908538',
   author: {
-    name: `방재호`,
+    name: `j-ho`,
     bio: {
       role: `Software Engineer`,
       description: ['비지니스 성장에 기여하는', '클린 코드를 지향하는', '동료들과 협업하는'],
       thumbnail: '',
     },
     social: {
-      github: ``,
+      github: `https://github.com/awesomelon`,
       linkedIn: ``,
       email: `awesomelon@naver.com`,
     },

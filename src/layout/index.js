@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
       <main className="page-content">{children}</main>
       <PageFooter
         author={author.name || `Author`}
-        githubUrl={author.social?.github || `https://www.github.com`}
+        githubUrl={author.social?.github || `https://github.com/awesomelon`}
       />
       <ThemeSwitch />
     </div>
