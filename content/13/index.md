@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: kafka가 뭐야?
 date: '2023-05-13 16:24:00'
 author: j-ho

@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: navigator.onLine을 활용한 네트워크 상태 관리
 date: '2024-11-18 14:17:00'
 author: j-ho

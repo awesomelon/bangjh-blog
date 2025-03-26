@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: MSP(Managed Service Provider)란 무엇이며, 왜 중요한가?
 date: '2024-12-26 16:20:34'
 author: j-ho

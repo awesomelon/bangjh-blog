@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: Anthropic MCP
 date: '2025-03-11 10:10:34'
 author: j-ho

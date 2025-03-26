@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: IE에서 AJAX 요청 캐싱 문제 해결하기
 date: '2019-08-09 17:58:00'
 author: j-ho

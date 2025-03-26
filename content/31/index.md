@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: 함수형 프로그래밍 (Functional Programming)
 date: '2024-08-01 14:58:00'
 author: j-ho

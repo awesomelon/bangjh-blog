@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: Perplexity
 date: '2024-09-28 15:58:00'
 author: j-ho

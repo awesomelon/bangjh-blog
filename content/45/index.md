@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: Meta의 StyleX
 date: '2023-12-18 09:58:00'
 author: j-ho

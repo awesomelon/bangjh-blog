@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: 머신러닝 모델의 과적합(Overfitting)
 date: '2025-03-19 15:22:34'
 author: j-ho

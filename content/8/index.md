@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: NestJS 로깅 도입하기 (winston)
 date: '2023-01-14 15:00:00'
 author: j-ho

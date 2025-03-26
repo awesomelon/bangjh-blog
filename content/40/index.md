@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: Parcel 기초 세팅
 date: '2019-12-26 09:58:00'
 author: j-ho

@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: NestJS 예외 처리 (Error Exception)
 date: '2023-01-07 17:00:00'
 author: j-ho

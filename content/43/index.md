@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: MySQL에서 emoji 문자 저장 문제 해결하기
 date: '2020-01-20 09:58:00'
 author: j-ho

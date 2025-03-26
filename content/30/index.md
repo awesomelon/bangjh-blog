@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: AI를 이용한 Git Commit 메시지 생성하기
 date: '2024-08-30 14:58:00'
 author: j-ho

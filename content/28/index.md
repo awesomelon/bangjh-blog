@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: 기능 분할 설계(Feature-Sliced Design, FSD)
 date: '2024-09-14 16:26:00'
 author: j-ho

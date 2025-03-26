@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: ArgoCD err_too_many_redirects
 date: '2023-07-08 22:00:00'
 author: j-ho

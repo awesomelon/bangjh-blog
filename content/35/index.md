@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: input 입력 시 한글만 입력하게 하고 싶을 때
 date: '2019-07-14 17:58:00'
 author: j-ho

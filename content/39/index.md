@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: iOS Safari에서 터치 이벤트 내 팝업 창 제한 문제 해결하기
 date: '2020-03-06 09:58:00'
 author: j-ho

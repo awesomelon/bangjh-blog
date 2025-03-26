@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: React에서 가장 어려운 부분?
 date: '2024-12-29 12:21:34'
 author: j-ho

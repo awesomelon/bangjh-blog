@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: Zustand v5 주요 변경 사항
 date: '2024-11-21 06:30:00'
 author: j-ho

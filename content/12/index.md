@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: DALL-E 및 사용 후기
 date: '2023-04-15 20:15:00'
 author: j-ho

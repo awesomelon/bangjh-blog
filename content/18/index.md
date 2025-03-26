@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: 국가 간 API 통신 이슈
 date: '2023-10-07 16:00:00'
 author: j-ho

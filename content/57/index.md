@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: Create React App의 종료
 date: '2025-03-07 09:20:34'
 author: j-ho

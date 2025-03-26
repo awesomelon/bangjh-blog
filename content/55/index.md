@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: React에서 발생하는 Abstraction Leak, 어떻게 해결할까?
 date: '2024-12-31 18:49:34'
 author: j-ho

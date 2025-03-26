@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: Swiper.js 슬라이더 안에 youtube 영상 넣기
 date: '2019-12-06 14:58:00'
 author: j-ho

@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: MongoDB(ReplicaSet)
 date: '2023-03-18 11:00:00'
 author: j-ho

@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: Styled-Components와 Emotion을 활용한 스타일링
 date: '2021-04-05 09:58:00'
 author: j-ho

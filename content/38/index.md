@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: iOS 모바일에서 Click 이벤트 지연 문제 해결하기
 date: '2020-02-07 12:58:00'
 author: j-ho

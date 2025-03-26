@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: Jenkins 취약점 이슈 (Script Security sandbox bypass vulnerability in Email Extension Plugin)
 date: '2023-10-14 16:00:00'
 author: j-ho

@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: Git 2.47 주요 변경 사항 요약
 date: '2024-10-16 15:41:00'
 author: j-ho

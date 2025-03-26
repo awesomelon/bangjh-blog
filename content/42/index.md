@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: 이미지에 CSS translate 사용 시 주의사항
 date: '2018-05-25 09:58:00'
 author: j-ho

@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: BFF(Backend For Frontend) 패턴
 date: '2024-09-26 14:17:00'
 author: j-ho

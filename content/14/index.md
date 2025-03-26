@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: kafka를 설치 및 연동해보자 (with NestJs)
 date: '2023-05-20 17:24:00'
 author: j-ho

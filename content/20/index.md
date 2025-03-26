@@ -1,5 +1,4 @@
 ---
-emoji: ☀️
 title: Drone CI for Bitbucket
 date: '2023-10-21 16:00:00'
 author: j-ho
