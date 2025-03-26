@@ -1,5 +1,6 @@
 import { Link, StaticQuery, graphql } from 'gatsby';
 import React from 'react';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import Post from '../../models/post';
 import PostSearch from '../post-search';
 import './style.scss';
@@ -37,7 +38,7 @@ function PageHeader({ siteTitle }) {
                 Resume
               </Link> */}
               <Link className="link" to="https://github.com/awesomelon">
-                Github
+                <GitHubIcon />
               </Link>
               <PostSearch
                 posts={data.allMarkdownRemark.edges.map(({ node }) => new Post(node, true))}

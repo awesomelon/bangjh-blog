@@ -31,19 +31,10 @@ html[data-theme='dark'] {
   align-items: center;
   max-width: 768px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 2rem;
   margin-top: 6rem;
   margin-bottom: 2rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-
-// 다크 모드 콘텐츠 컨테이너
-html[data-theme='dark'] .page-content {
-  background-color: rgba(40, 40, 45, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 // 링크 스타일
