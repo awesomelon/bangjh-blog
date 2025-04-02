@@ -1,16 +1,19 @@
 @use '../../styles/mixins'as *;
+@use '../../styles/variables'as *;
 
 .page-header-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 100%;
+  max-width: $content-max-width;
   height: 60px;
 
   .page-header {
     display: flex;
     align-items: end;
     justify-content: space-between;
-    @include content-max-width;
+
 
     .link {
       font-weight: 700;

@@ -1,4 +1,5 @@
-/* 도트 형식의 WIKI 스타일 */
+@use './variables'as *;
+
 
 // 배경에 도트 패턴 적용
 html {
@@ -7,21 +8,12 @@ html {
   --dot-space: 15px;
 
   background-color: #f8f8f8;
-  background-image: radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size)),
-    radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size));
-  background-size: var(--dot-space) var(--dot-space);
-  background-position: 0 0, calc(var(--dot-space) / 2) calc(var(--dot-space) / 2);
+
 }
 
 // 다크 모드 도트 패턴
 html[data-theme='dark'] {
-  --dot-color: rgba(255, 255, 255, 0.1);
-
   background-color: #232326;
-  background-image: radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size)),
-    radial-gradient(var(--dot-color) var(--dot-size), transparent var(--dot-size));
-  background-size: var(--dot-space) var(--dot-space);
-  background-position: 0 0, calc(var(--dot-space) / 2) calc(var(--dot-space) / 2);
 }
 
 // 콘텐츠 컨테이너 스타일
@@ -29,7 +21,7 @@ html[data-theme='dark'] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 768px;
+  max-width: $content-max-width;
   width: 100%;
   border-radius: 5px;
   margin-top: 4rem;
