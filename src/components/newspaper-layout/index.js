@@ -14,9 +14,7 @@ function NewspaperLayout({ children, title }) {
     <div className="newspaper-layout">
       <header className="masthead">
         <div className="meta-info">
-          <span className="date">{today}</span>
-          <span className="weather">Sunny, 24°C</span>
-          <span className="price">$1.00</span>
+          <span className="date">{today}</span>          
         </div>
         <div className="brand">
           <Link to="/">{title || 'The Daily Blog'}</Link>
