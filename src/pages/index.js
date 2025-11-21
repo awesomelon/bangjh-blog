@@ -40,7 +40,7 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 500, truncate: true)
           frontmatter {
-            categories
+
             title
             date(formatString: "MMMM DD, YYYY")
           }

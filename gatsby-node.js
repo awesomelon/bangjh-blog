@@ -24,36 +24,7 @@ const createBlogPages = ({ createPage, results }) => {
   });
 };
 
-const createPostsPages = ({ createPage, results }) => {
-  const categoryTemplate = require.resolve(`./src/templates/category-template.js`);
-  const categorySet = new Set(['All']);
-  const { edges } = results.data.allMarkdownRemark;
 
-  edges.forEach(({ node }) => {
-    const postCategories = node.frontmatter.categories.split(' ');
-    postCategories.forEach((category) => categorySet.add(category));
-  });
-
-  const categories = [...categorySet];
-
-  createPage({
-    path: `/posts`,
-    component: categoryTemplate,
-    context: { currentCategory: 'All', edges, categories },
-  });
-
-  categories.forEach((currentCategory) => {
-    createPage({
-      path: `/posts/${currentCategory}`,
-      component: categoryTemplate,
-      context: {
-        currentCategory,
-        categories,
-        edges: edges.filter(({ node }) => node.frontmatter.categories.includes(currentCategory)),
-      },
-    });
-  });
-};
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
@@ -69,7 +40,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               slug
             }
             frontmatter {
-              categories
+
               title
               date(formatString: "MMMM DD, YYYY")
             }
@@ -96,5 +67,5 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   createBlogPages({ createPage, results });
-  createPostsPages({ createPage, results });
+
 };
