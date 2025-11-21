@@ -1,0 +1,26 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.newspaper-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  
+
+
+  .main-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    
+    @include md {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include lg {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+
+}

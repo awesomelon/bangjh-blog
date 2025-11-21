@@ -1,5 +1,6 @@
-@use '../../styles/markdown-style'as *;
-@use 'prismjs/themes/prism-tomorrow'as *;
+@use '../../styles/markdown-style' as *;
+@use 'prismjs/themes/prism-tomorrow' as *;
+@use '../../styles/variables' as *;
 
 .post-content {
   display: flex;
@@ -7,4 +8,19 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 20px;
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--content-text-color);
+
+  // Drop cap for the first paragraph
+  .markdown > p:first-of-type::first-letter {
+    float: left;
+    font-family: $font-title;
+    font-size: 3.5em;
+    line-height: 0.8;
+    margin-right: 0.1em;
+    color: var(--primary-text-color);
+    font-weight: 900;
+  }
 }

@@ -1,33 +1,32 @@
-import React, { useCallback, useState } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layout';
+import NewspaperLayout from '../components/newspaper-layout';
+import HeadlinePost from '../components/headline-post';
+import PostCard from '../components/post-card';
 import Head from '../components/seo';
-import Bio from '../components/bio';
+
 import Post from '../models/post';
 
-import { getUniqueCategories } from '../utils/helpers';
-import PostTabs from '../components/post-tabs';
+import './index.scss';
 
 function HomePage({ data }) {
   const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node));
-  const { author, language } = data.site.siteMetadata;
-  const categories = ['All', ...getUniqueCategories(posts)];
-  const featuredTabIndex = categories.findIndex((category) => category === 'featured');
-  const [tabIndex, setTabIndex] = useState(featuredTabIndex === -1 ? 0 : featuredTabIndex);
-  const onTabIndexChange = useCallback((e, value) => setTabIndex(value), []);
+
 
   return (
-    <Layout>
+    <NewspaperLayout title="The Daily Blog">
       <Head title="방로그" />
-      <Bio author={author} language={language} />
-      <PostTabs
-        posts={posts}
-        onChange={onTabIndexChange}
-        tabs={categories}
-        tabIndex={tabIndex}
-        showMoreButton
-      />
-    </Layout>
+      <HeadlinePost post={posts[0]} />
+      
+      <div className="newspaper-grid">
+        <div className="main-column">
+          {posts.slice(1).map((post) => (
+            <PostCard key={post.id} post={post} />
+          ))}
+        </div>
+      </div>
+    </NewspaperLayout>
   );
 }
 

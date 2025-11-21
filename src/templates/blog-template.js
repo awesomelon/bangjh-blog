@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layout';
+import NewspaperLayout from '../components/newspaper-layout';
 import Head from '../components/seo';
 import PostHeader from '../components/post-header';
 import PostNavigator from '../components/post-navigator';
@@ -30,13 +31,13 @@ function BlogTemplate({ data }) {
   }, [siteUrl, curPost.slug]);
 
   return (
-    <Layout>
+    <NewspaperLayout title="The Daily Blog">
       <Head title={curPost?.title} description={curPost?.excerpt} />
       <PostHeader post={curPost} viewCount={viewCount} />
       <PostContent html={curPost.html} />
       <PostNavigator prevPost={prevPost} nextPost={nextPost} />
       {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
-    </Layout>
+    </NewspaperLayout>
   );
 }
 

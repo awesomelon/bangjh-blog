@@ -1,0 +1,66 @@
+@use '../../styles/variables' as *;
+
+.newspaper-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: $font-family;
+
+  .masthead {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 4px double var(--primary-text-color);
+    padding-bottom: 10px;
+
+    .meta-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      border-bottom: 1px solid var(--primary-text-color);
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-family: sans-serif;
+      text-transform: uppercase;
+    }
+
+    .brand {
+      font-family: $font-title;
+      font-size: 64px;
+      font-weight: 900;
+      margin: 20px 0;
+      
+      a {
+        text-decoration: none;
+        color: var(--primary-text-color);
+      }
+    }
+
+    .edition-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .separator {
+      border: none;
+      border-top: 1px solid var(--primary-text-color);
+      margin: 0;
+    }
+  }
+
+  .newspaper-content {
+    min-height: 600px;
+  }
+
+  .newspaper-footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 2px solid var(--primary-text-color);
+    text-align: center;
+    font-size: 14px;
+  }
+}
