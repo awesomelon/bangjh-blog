@@ -10,7 +10,7 @@ module.exports = {
     },
   },
   gSearch: '5LI5QQqvrdf89wtBzZJFaNoF-GaI5lphHVTK-Qnw9vM',
-  ga: '337776443', // Google Analytics Tracking ID
+  ga: 'G-5E07T6SWNH', // Google Analytics Tracking ID
   ads: 'ca-pub-1367328009908538',
   author: {
     name: `j-ho`,

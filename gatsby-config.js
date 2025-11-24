@@ -49,12 +49,12 @@ module.exports = {
         anonymize: true,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-adsense`,
-    //   options: {
-    //     publisherId: metaConfig.ads,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: metaConfig.ads,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
