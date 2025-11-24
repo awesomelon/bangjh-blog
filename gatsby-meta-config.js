@@ -2,14 +2,14 @@ module.exports = {
   title: `방로그`,
   description: `재호의 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://j-ho.dev`,
+  siteUrl: `https://j-ho.io`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
       repo: `awesomelon/bangjh-blog`,
     },
   },
-  gSearch: 'Ru_ZXmzzTdp6QqzkVt7fgTOZAz82h8VQ0O6T6TnYTak',
+  gSearch: '5LI5QQqvrdf89wtBzZJFaNoF-GaI5lphHVTK-Qnw9vM',
   ga: '337776443', // Google Analytics Tracking ID
   ads: 'ca-pub-1367328009908538',
   author: {
