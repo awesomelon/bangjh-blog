@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import './style.scss';
 
 function NewspaperLayout({ children, title }) {
-  const today = new Date().toLocaleDateString('en-US', {
+  const today = new Date().toLocaleDateString('ko-KR', {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
