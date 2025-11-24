@@ -18,7 +18,7 @@ function BlogTemplate({ data }) {
   
 
   return (
-    <NewspaperLayout title="The Daily Blog">
+    <NewspaperLayout title="The Daily Blog" showBackButton={true}>
       <Head title={curPost?.title} description={curPost?.excerpt} />
       <PostHeader post={curPost} />
       <PostContent html={curPost.html} />
