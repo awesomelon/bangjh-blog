@@ -13,12 +13,11 @@ import './index.scss';
 function HomePage({ data }) {
   const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node));
 
-
   return (
-    <NewspaperLayout title="The Daily Blog">
+    <NewspaperLayout title="j-ho.io">
       <Head title="방로그" />
       <HeadlinePost post={posts[0]} />
-      
+
       <div className="newspaper-grid">
         <div className="main-column">
           {posts.slice(1).map((post) => (
@@ -40,7 +39,6 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 500, truncate: true)
           frontmatter {
-
             title
             date(formatString: "YYYY-MM-DD")
           }

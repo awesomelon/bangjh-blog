@@ -8,17 +8,15 @@ import Post from '../models/post';
 import PostContent from '../components/post-content';
 import Utterances from '../components/utterances';
 
-function BlogTemplate({ data }) {  
+function BlogTemplate({ data }) {
   const curPost = new Post(data.cur);
   const prevPost = data.prev && new Post(data.prev);
   const nextPost = data.next && new Post(data.next);
   const { comments } = data.site?.siteMetadata;
   const utterancesRepo = comments?.utterances?.repo;
 
-  
-
   return (
-    <NewspaperLayout title="The Daily Blog" showBackButton={true}>
+    <NewspaperLayout title="j-ho.io" showBackButton={true}>
       <Head title={curPost?.title} description={curPost?.excerpt} />
       <PostHeader post={curPost} />
       <PostContent html={curPost.html} />

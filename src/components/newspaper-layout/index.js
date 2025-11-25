@@ -26,7 +26,7 @@ function NewspaperLayout({ children, title, showBackButton }) {
               <span className="date">{today}</span>
             </div>
             <div className="brand">
-              <Link to="/">{title || 'The Daily Blog'}</Link>
+              <Link to="/">{title || 'j-ho.io'}</Link>
             </div>
             <div className="edition-info">
               <span>Vol. 1, No. 1</span>
@@ -38,7 +38,7 @@ function NewspaperLayout({ children, title, showBackButton }) {
       </header>
       <main className="newspaper-content">{children}</main>
       <footer className="newspaper-footer">
-        <p>© {new Date().getFullYear()} The Daily Blog. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} j-ho.io. All rights reserved.</p>
       </footer>
     </div>
   );
