@@ -8,8 +8,6 @@ categories: WIKI
 
 > 이 글은 BBC Newsnight의 순다르 피차이 인터뷰를 바탕으로 재구성되었습니다.
 
-![image](1.jpg)
-
 최근 실리콘밸리는 그 어느 때보다 뜨겁습니다. 엔비디아(Nvidia)의 시가총액이 국가 예산을 뛰어넘고, 빅테크 기업들은 천문학적인 자금을 AI 인프라에 쏟아붓고 있습니다. 일각에서는 "닷컴 버블의 재현이 아니냐"는 우려 섞인 목소리도 나옵니다.
 
 이 혼란스럽고도 경이로운 시기에, 구글(Google)의 CEO **순다르 피차이(Sundar Pichai)** 가 BBC Newsnight와의 인터뷰를 통해 입을 열었습니다.
@@ -90,7 +88,7 @@ AI가 가져올 엄청난 기회에 대해서는 담대하게 투자하되, 딥�
 
 [참고 자료]
 
-- 인터뷰 유튜브 링크: [https://www.youtube.com/watch?v=BYx63PKKPvg](https://www.youtube.com/watch?v=BYx63PKKPvg)
+![image](1.jpg)(https://www.youtube.com/watch?v=BYx63PKKPvg)
 
 ```toc
 
