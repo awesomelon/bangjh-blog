@@ -28,13 +28,11 @@
       margin-bottom: 10px;
       text-transform: uppercase;
       letter-spacing: 1px;
-
-
     }
 
     .title {
       font-family: $font-title;
-      font-size: 48px;
+      font-size: 40px;
       line-height: 1.2;
       margin-bottom: 20px;
     }
@@ -44,7 +42,7 @@
       font-size: 18px;
       line-height: 1.6;
       color: var(--content-text-color);
-      
+
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
